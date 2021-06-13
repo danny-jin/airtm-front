@@ -1,0 +1,17 @@
+@import "../../theme";
+
+section {
+  height: 100vh;
+}
+
+@include media-breakpoint-down(sm) {
+  .background {
+    background: white;
+  }
+}
+
+@include media-breakpoint-up(md) {
+  .background {
+    background: $alabaster;
+  }
+}

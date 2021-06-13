@@ -1,0 +1,19 @@
+// Customize bootstrap theme variables
+@import "assets/theme";
+@import "~bootstrap";
+
+// Custom theme styles
+@import "assets/theme/imports";
+
+
+html, body {
+  height: 100%;
+}
+
+body {
+  margin: 0;
+}
+
+* {
+  font-family: 'Poppins', sans-serif;
+}
