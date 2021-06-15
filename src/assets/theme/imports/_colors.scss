@@ -2,6 +2,12 @@
   &-transparent {
     #{$property}: transparent;
   }
+  &-catskill-white {
+    #{$property}: $catskill-white;
+  }
+  &-hit-gray {
+    #{$property}: $hit-gray;
+  }
 }
 
 .color {

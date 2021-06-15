@@ -2,13 +2,14 @@ import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 
 import { LandingLayoutComponent } from '../layout/landing-layout/landing-layout.component';
+import { ROUTES } from '../core/constants/routes';
 
 const routes: Routes = [
   {
     path: '', component: LandingLayoutComponent, children: [
       {
-        path: '',
-        loadChildren: () => import('./home/home.module').then(m => m.HomeModule)
+        path: ROUTES.landingPages.virtualCard,
+        loadChildren: () => import('./virtual-card/virtual-card.module').then(m => m.VirtualCardModule)
       }
     ]
   }
@@ -18,4 +19,5 @@ const routes: Routes = [
   imports: [RouterModule.forChild(routes)],
   exports: [RouterModule]
 })
-export class LandingRoutingModule { }
+export class LandingRoutingModule {
+}

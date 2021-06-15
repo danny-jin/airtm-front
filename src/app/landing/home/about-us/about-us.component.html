@@ -1,0 +1,17 @@
+<section class="mt-30">
+  <div class="container">
+    <div class="row">
+      <div class="col-12 col-lg-4" *ngFor="let item of aboutUsItems">
+        <div class="d-flex flex-column align-items-center">
+          <div class="d-flex justify-content-center">
+            <img class="width-70" defaultImage="assets/images/placeholder.png" [lazyLoad]="item.icon" [alt]="item.altTag" loading="lazy">
+          </div>
+          <div class="d-flex justify-content-center mb-20">
+            <span class="fw-normal fs-5 text-info">{{ item.title | translate }}</span>
+          </div>
+          <span class="text-info text-center width-300 mb-20">{{ item.description | translate }}</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

@@ -1,1 +1,28 @@
-<p>footer works!</p>
+<section class="bg-dark pt-50 pb-10">
+  <div class="container px-40 px-lg-0">
+    <div class="d-flex flex-column flex-lg-row justify-content-between">
+      <div class="d-flex flex-column mb-30">
+        <a class="mb-20" routerLink="/{{ currentLanguageCode }}">
+          <img defaultImage="assets/images/placeholder.png" lazyLoad="assets/images/white-logo.png" alt="Airtm" loading="lazy">
+        </a>
+        <a class="text-white fw-bold font-13 mb-10">{{ 'footer.landing.terms-and-conditions' | translate }}</a>
+        <div class="d-flex">
+          <span class="text-white font-13">{{ 'footer.landing.made-with' | translate }}</span>
+          <span class="mx-5">💙</span>
+          <span class="text-white font-13">{{ 'footer.landing.in-mexico-city' | translate }}</span>
+        </div>
+      </div>
+      <div class="d-flex">
+        <ng-container *ngFor="let menuItem of menuItems; let first = first;">
+          <div class="d-flex flex-column" [ngClass]="first ? 'me-lg-200 me-50' : ''">
+            <h6 class="text-white fw-bold mb-15">{{ menuItem.title | translate }}</h6>
+            <a class="text-white font-13 mb-5" *ngFor="let item of menuItem.menu">{{ item.label | translate }}</a>
+          </div>
+        </ng-container>
+      </div>
+    </div>
+    <div class="mt-30">
+      <span class="font-13 color-hit-gray">{{ 'footer.landing.notice' | translate }}</span>
+    </div>
+  </div>
+</section>

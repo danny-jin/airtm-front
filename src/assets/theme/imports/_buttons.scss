@@ -1,6 +1,21 @@
 .btn.btn {
-  border-radius: 4px;
-  height: 40px;
+  &-primary {
+    background: $dodger-blue;
+    color: white;
+    &:hover, &:active {
+      background: $dodger-blue-01;
+    }
+  }
+
+  &-outline-primary {
+    border: solid 1px $dodger-blue;
+    color: $dodger-blue;
+    &:hover, &:active {
+      border: solid 1px $dodger-blue-01;
+      color: $dodger-blue;
+      background: transparent;
+    }
+  }
 }
 
 .btn-small {

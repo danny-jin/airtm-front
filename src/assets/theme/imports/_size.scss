@@ -1,4 +1,4 @@
-@for $i from 0 through 80 {
+@for $i from 0 through 100 {
   .height-#{$i * 5} {
     height: #{$i * 5}px !important;
   }
@@ -38,8 +38,4 @@
   .w-#{$i * 5} {
     width: #{$i * 5%} !important;
   }
-}
-
-.width-100vw {
-  width: 100vw;
 }
