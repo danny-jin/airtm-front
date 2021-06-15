@@ -6,6 +6,7 @@ import { TranslateModule, TranslateLoader } from '@ngx-translate/core';
 import { NgProgressModule } from 'ngx-progressbar';
 import { NgProgressRouterModule } from 'ngx-progressbar/router';
 
+import { ToastrModule } from './ui-kit/toastr/toastr.module';
 import { LandingLayoutModule } from './layout/landing-layout/landing-layout.module';
 import { HomeModule } from './landing/home/home.module';
 
@@ -25,6 +26,7 @@ import { httpTranslateLoader } from './core/utils/translate.util';
     BrowserAnimationsModule,
     NgProgressModule,
     NgProgressRouterModule,
+    ToastrModule,
     HttpClientModule,
     TranslateModule.forRoot({
       loader: {

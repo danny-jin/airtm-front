@@ -1,5 +1,4 @@
 import { Component } from '@angular/core';
-import { ActivatedRoute } from '@angular/router';
 
 import { LanguageService } from './core/services/language.service';
 
@@ -11,14 +10,9 @@ import { LanguageService } from './core/services/language.service';
 export class AppComponent {
 
   constructor(
-    private route: ActivatedRoute,
     private languageService: LanguageService
   ) {
-    const languageCode = this.route.snapshot.params.languageCode;
-    if (!languageCode) {
-      return;
-    }
-    this.languageService.initLanguage(languageCode);
+    this.languageService.initLanguage();
   }
 
 }

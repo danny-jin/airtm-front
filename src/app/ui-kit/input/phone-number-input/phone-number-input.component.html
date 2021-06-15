@@ -1,0 +1,24 @@
+<div class="form-group" [class.label-input-group]="label">
+  <label class="form-label text-info">
+    <div class="d-flex mb-5" *ngIf="label">
+      <span class="text-info">{{ label }}</span>
+    </div>
+    <div class="wrapper">
+      <ngx-intl-tel-input
+        [cssClass]="'custom'"
+        [preferredCountries]="[CountryISO.UnitedStates, CountryISO.UnitedKingdom]"
+        [enableAutoCountrySelect]="false"
+        [enablePlaceholder]="true"
+        [searchCountryFlag]="true"
+        [searchCountryField]="[SearchCountryField.Iso2, SearchCountryField.Name]"
+        [selectFirstCountry]="false"
+        [selectedCountryISO]="CountryISO.UnitedStates"
+        [separateDialCode]="true"
+        maxLength="15"
+        [phoneValidation]="true"
+        name="phone"
+        [(ngModel)]="value" (ngModelChange)="change($event)"
+      ></ngx-intl-tel-input>
+    </div>
+  </label>
+</div>

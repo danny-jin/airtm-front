@@ -1,0 +1,21 @@
+<div class="form-group" [class.label-input-group]="label">
+  <label class="form-label">
+    <div class="d-flex mb-5" *ngIf="label">
+      <span class="text-info">{{ label }}</span>
+    </div>
+    <div class="d-flex">
+      <ejs-dropdownlist class="w-100" [dataSource]="options" [(ngModel)]="value" (valueChange)="change($event)" [fields]="dropdownFields">
+        <ng-template #itemTemplate let-data>
+          <div class="d-flex justify-content-between align-items-center px-10">
+            <span class="text-dark">{{ data.label }}</span>
+          </div>
+        </ng-template>
+        <ng-template #valueTemplate let-data>
+          <div class="d-flex align-items-center">
+            <span class="text-dark mx-5">{{ data.label }}</span>
+          </div>
+        </ng-template>
+      </ejs-dropdownlist>
+    </div>
+  </label>
+</div>

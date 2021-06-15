@@ -60,6 +60,10 @@
   z-index: 100;
 }
 
+.font-weight-bold {
+  font-weight: 500;
+}
+
 ejs-dropdownlist::ng-deep {
   .e-input-value {
     display: flex !important;

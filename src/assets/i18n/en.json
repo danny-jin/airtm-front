@@ -1,15 +1,20 @@
 {
-  "auth": {
-    "login": "Log in",
-    "join": "Join"
-  },
   "validation": {
-    "root": "Validation"
+    "root": "Validation",
+    "weak": "Weak",
+    "medium": "Medium",
+    "high": "High"
   },
   "common": {
-    "get-started": "Get Started"
+    "get-started": "Get Started",
+    "warning": "Warning",
+    "loading": "Loading",
+    "slideToCompletePuzzle": "Slide To complete the puzzle"
   },
   "dialog": {
+    "securityVerification": {
+      "root": "Security Verification"
+    }
   },
   "navbar": {
     "landing": {
@@ -95,6 +100,57 @@
         "add-funds-using-your-local-currency": "Add funds using your local currency.",
         "save-send-spend-and-withdraw": "Save, send, spend and withdraw."
       }
+    }
+  },
+  "auth": {
+    "login": {
+      "root": "Log in",
+      "login-to-airtm": "Log in to Airtm",
+      "login-with-facebook": "Log in with Facebook",
+      "login-with-google": "Log in with Google",
+      "or": "or",
+      "your-email": "Your email",
+      "password": "Password",
+      "forgot-your-password": "Forgot your password?",
+      "not-registered-yet": "Not registered yet?",
+      "create-an-account": "Create an account"
+    },
+    "signup": {
+      "root": "Sign up",
+      "join": "Join",
+      "create-an-account": "Create an account",
+      "signup-with-facebook": "Sign up with Facebook",
+      "signup-with-google": "Sign up with Google",
+      "this-account-is-for": "This account is for",
+      "an-individual": "an individual",
+      "a-business": "a business",
+      "what-country-do-you-live-in": "What country do you live in?",
+      "login-to-airtm": "Log in to Airtm",
+      "or": "or",
+      "your-email": "Your email",
+      "password": "Password",
+      "confirm-password": "Confirm Password",
+      "first-name": "First name",
+      "last-name": "Last name",
+      "second-last-name": "Second Last Name (Optional)",
+      "name-must-match-government-issue-id": "* Name must match government issued ID.",
+      "create-account": "Create account",
+      "by-creating-an-account": "By creating an account, you consent that you have read and agree to our",
+      "terms-of-service-and-privacy": "Terms of Service and Privacy",
+      "already-have-an-account": "Already have an account?",
+      "login": "Log in",
+      "benefits-of-airtm": "Benefits of Airtm",
+      "save-and-spend-in-dollars": "Save and spend in U.S. dollars.",
+      "convert-e-money-to-cash-globally": "Convert e-money to cash globally.",
+      "send-money-anywhere": "Send money anywhere.",
+      "exchange-cryptocurrencies": "Exchange cryptocurrencies.",
+      "fast-safe-reliable": "Fast, safe & reliable."
+    },
+    "notify": {
+      "minimum-8-characters": "Minimum 8 characters",
+      "at-least-1-special-character": "At least 1 Special character",
+      "at-least-1-upper-case": "At least 1 UPPER CASE",
+      "at-least-1-number": "At least 1 Number"
     }
   }
 }

@@ -6,9 +6,9 @@ form {
 
   label.form-label .wrapper {
     display: flex;
-    padding: 0 8px;
+    padding: 0;
     border-bottom: solid 1px $hit-gray;
-    border-radius: 4px;
+    background: transparent;
     &:focus, &:hover, &:active {
       border-bottom: solid 2px $dodger-blue;
     }
@@ -16,7 +16,7 @@ form {
 
   .invalid {
     label.form-label .wrapper {
-      border: solid 1px $brick-red;
+      border-bottom: solid 1px $brick-red;
     }
   }
 
@@ -26,14 +26,19 @@ form {
   }
 
   .form-control[readonly] {
-    background-color: white;
+    background-color: transparent;
   }
 
   .form-group {
-    background-color: white;
+    background-color: transparent;
+    margin-bottom: 20px;
+
     textarea.form-control, select.form-control, input.form-control {
       padding: 0;
+      height: 40px;
       color: $shark;
+      font-size: 16px;
+      background: transparent;
       outline: none !important;
       box-shadow: none !important;
     }

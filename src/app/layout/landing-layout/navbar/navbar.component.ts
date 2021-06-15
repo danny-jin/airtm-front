@@ -2,12 +2,12 @@ import { Component, HostListener, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
 import { animate, state, style, transition, trigger } from '@angular/animations';
 
-import { GlobalService } from '../../../core/services/global.service';
 import { NavItem } from '../../../core/models/nav';
 import { languageList } from '../../../core/constants/language';
+import { headerHeight } from '../../../core/constants/base';
 import { ROUTES } from '../../../core/constants/routes';
-
-const headerHeight = 90;
+import { LanguageService } from '../../../core/services/language.service';
+import { Language } from '../../../core/models/language';
 
 @Component({
   selector: 'app-landing-navbar',
@@ -24,21 +24,22 @@ const headerHeight = 90;
 })
 export class NavbarComponent implements OnInit {
 
+  ROUTES = ROUTES;
+  languageList = languageList;
   showMobileMenu = false;
   isSticky = false;
-  currentLanguageCode = this.globalService.getLanguageCode();
   menuItems: NavItem[] = [
     { label: 'navbar.landing.store-directory', route: 'https://directory.airtm.com', isExternalLink: true },
-    { label: 'navbar.landing.virtual-card', route: [this.currentLanguageCode, ROUTES.landingPages.virtualCard] },
+    { label: 'navbar.landing.virtual-card', route: [ROUTES.landingPages.virtualCard] },
     { label: 'navbar.landing.rates', route: 'https://rates.airtm.com', isExternalLink: true },
     { label: 'navbar.landing.blog', route: 'https://blog.airtm.com', isExternalLink: true },
   ];
-  ROUTES = ROUTES;
-  languageList = languageList;
+
+  language$ = this.languageService.language$;
 
   constructor(
     private router: Router,
-    private globalService: GlobalService
+    private languageService: LanguageService,
   ) { }
 
   ngOnInit(): void {
@@ -49,11 +50,8 @@ export class NavbarComponent implements OnInit {
     this.isSticky = window.scrollY > headerHeight;
   }
 
-  switchLanguage(languageCode: string): void {
-    const url = `${ languageCode }${ this.router.url.slice(3) }`;
-    this.router.navigateByUrl(url).then(() => {
-      location.reload();
-    });
+  switchLanguage(language: Language): void {
+    this.languageService.switchLanguage(language);
   }
 
 }

@@ -1,20 +1,20 @@
-<section class="bg-color-catskill-white" [ngClass]="isSticky ? 'sticky shadow-primary': ''">
+<section [ngClass]="isSticky ? 'sticky shadow-primary bg-color-catskill-white': ''">
   <div class="container">
     <div class="d-flex justify-content-between align-items-center">
       <div class="d-flex align-items-center">
-        <a routerLink="/{{ currentLanguageCode }}">
-          <img defaultImage="assets/images/placeholder.png" lazyLoad="assets/images/primary-logo.png" alt="Airtm" loading="lazy">
+        <a routerLink="/">
+          <img class="height-90" defaultImage="assets/images/placeholder.png" lazyLoad="assets/images/primary-logo.png" alt="Airtm" loading="lazy">
         </a>
         <div class="d-none d-lg-flex">
           <ul class="list-style-none w-100 d-flex justify-content-between text-white p-0 m-0">
             <div class="d-flex flex-column flex-lg-row">
               <ng-container *ngFor="let item of menuItems">
                 <li *ngIf="item.isExternalLink; else internalLink;">
-                  <a [href]="item.route" target="_blank" class="ps-30 ps-xl-70 text-info font-14 fw-bolder cursor-pointer text-decoration-none">{{ item.label | translate }}</a>
+                  <a [href]="item.route" target="_blank" class="ps-30 ps-xl-70 text-info font-14 font-weight-bold cursor-pointer text-decoration-none">{{ item.label | translate }}</a>
                 </li>
                 <ng-template #internalLink>
                   <li ngxScrollTo="root" [routerLink]="item.route | routeToAbsolute" routerLinkActive="active" >
-                    <a class="ps-30 ps-xl-70 text-info font-14 fw-bolder cursor-pointer text-decoration-none">{{ item.label | translate }}</a>
+                    <a class="ps-30 ps-xl-70 text-info font-14 font-weight-bold cursor-pointer text-decoration-none">{{ item.label | translate }}</a>
                   </li>
                 </ng-template>
               </ng-container>
@@ -24,11 +24,11 @@
       </div>
       <div class="d-flex">
         <div class="d-none d-lg-flex align-items-center">
-          <button class="btn btn-outline-primary width-100 height-40 rounded-pill me-20">{{ 'auth.login' | translate }}</button>
-          <button class="btn btn-primary width-100 height-40 rounded-pill me-20">{{ 'auth.join' | translate }}</button>
+          <button class="btn btn-outline-primary width-100 rounded-pill me-20" ngxScrollTo="root" [routerLink]="[ROUTES.auth.login] | routeToAbsolute">{{ 'auth.login.root' | translate }}</button>
+          <button class="btn btn-primary width-100 rounded-pill me-20" ngxScrollTo="root" [routerLink]="[ROUTES.auth.signUp] | routeToAbsolute">{{ 'auth.signup.join' | translate }}</button>
           <div class="d-flex align-items-center">
             <ng-container *ngFor="let language of languageList">
-              <a class="text-info font-14 fw-bold text-decoration-none cursor-pointer" (click)="switchLanguage(language.code)" *ngIf="language.code !== currentLanguageCode">{{ language.code | uppercase }}</a>
+              <a class="text-info font-14 fw-bold text-decoration-none cursor-pointer" (click)="switchLanguage(language)" *ngIf="language.code !== (language$ | async)?.code">{{ language.code | uppercase }}</a>
             </ng-container>
           </div>
         </div>
@@ -45,22 +45,22 @@
           <div class="d-flex flex-column">
             <ng-container *ngFor="let item of menuItems">
               <li class="mb-10" *ngIf="item.isExternalLink; else internalLink;">
-                <a [href]="item.route" target="_blank" class="px-20 text-info fs-6 fw-bolder cursor-pointer text-decoration-none">{{ item.label | translate }}</a>
+                <a [href]="item.route" target="_blank" class="px-20 text-info fs-6 font-weight-bold cursor-pointer text-decoration-none">{{ item.label | translate }}</a>
               </li>
               <ng-template #internalLink>
                 <li class="mb-10" ngxScrollTo="root" [routerLink]="item.route | routeToAbsolute" routerLinkActive="active" >
-                  <a class="px-20 text-info fs-6 fw-bolder cursor-pointer text-decoration-none">{{ item.label | translate }}</a>
+                  <a class="px-20 text-info fs-6 font-weight-bold cursor-pointer text-decoration-none">{{ item.label | translate }}</a>
                 </li>
               </ng-template>
             </ng-container>
           </div>
         </ul>
         <div class="d-flex flex-column me-20">
-          <button class="btn btn-outline-primary width-100 height-40 rounded-pill mb-20">{{ 'auth.login' | translate }}</button>
-          <button class="btn btn-primary width-100 height-40 rounded-pill mb-20">{{ 'auth.join' | translate }}</button>
+          <button class="btn btn-outline-primary width-100 rounded-pill mb-20" ngxScrollTo="root" [routerLink]="[ROUTES.auth.login] | routeToAbsolute">{{ 'auth.login.root' | translate }}</button>
+          <button class="btn btn-primary width-100 rounded-pill mb-20" ngxScrollTo="root" [routerLink]="[ROUTES.auth.signUp] | routeToAbsolute">{{ 'auth.signup.join' | translate }}</button>
           <div class="d-flex justify-content-center align-items-center">
             <ng-container *ngFor="let language of languageList">
-              <a class="text-info font-14 fw-bold text-decoration-none cursor-pointer" (click)="switchLanguage(language.code)" *ngIf="language.code !== currentLanguageCode">{{ language.code | uppercase }}</a>
+              <a class="text-info font-14 fw-bold text-decoration-none cursor-pointer" (click)="switchLanguage(language)" *ngIf="language.code !== (language$ | async)?.code">{{ language.code | uppercase }}</a>
             </ng-container>
           </div>
         </div>

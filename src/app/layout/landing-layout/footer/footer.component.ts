@@ -1,15 +1,11 @@
 import { Component, OnInit } from '@angular/core';
 
-import { GlobalService } from '../../../core/services/global.service';
-
 @Component({
   selector: 'app-landing-footer',
   templateUrl: './footer.component.html',
   styleUrls: ['./footer.component.scss']
 })
 export class FooterComponent implements OnInit {
-
-  currentLanguageCode = this.globalService.getLanguageCode();
 
   menuItems = [
     {
@@ -32,7 +28,6 @@ export class FooterComponent implements OnInit {
   ];
 
   constructor(
-    private globalService: GlobalService
   ) { }
 
   ngOnInit(): void {

@@ -6,23 +6,19 @@ import { Pipe, PipeTransform } from '@angular/core';
 export class ColorPipe implements PipeTransform {
 
   colors = {
-    niagara: '#07A39D', // primary color
-    fern: '#5BBA5E', // success color
-    tangerine: '#F18F01', // warning color
-    carnation: '#FA6969', // danger color
+    'dodger-blue': '#1783FA', // primary color
+    'mountain-meadow': '#0ECB81', // success color
+    'buddha-gold': '#C99400', // warning color
+    'blue-bayoux': '#526474', // info color
+    'brick-red': '#CF304A', // danger color
     downriver: '#0A2540',
-    cinder: '#151720',
-    'cape-cod': '#353636',
-    nobel: '#B3B3B3',
-    'gray-chateau': '#9CA6B1',
-    'black-squeeze': '#F3F7FB',
-    'dove-gray': '#666666',
-    'catskill-white': '#F7F9FB',
-    'mine-shaft': '#3E3E3E',
-    silver: '#C1C1C1',
-    'cloud-burst': '#213951',
-    mercury: '#E5E5E5',
-    'swans-down': '#DBEEED',
+    'blue-romance': '#D1F4D9',
+    'humming-bird': '#D0F3F8',
+    peach: '#FFE4BC',
+    cosmos: '#FED6DB',
+    'catskill-white': '#F6F9FB',
+    'hit-gray': '#A9B1B9',
+    white: '#FFFFFF'
   };
 
   transform(value: string): string {

@@ -1,0 +1,14 @@
+<section class="shadow-primary" [ngClass]="isSticky ? 'sticky bg-color-catskill-white': ''">
+  <div class="px-20">
+    <div class="d-flex justify-content-between align-items-center">
+      <a routerLink="/">
+        <img class="height-90" defaultImage="assets/images/placeholder.png" lazyLoad="assets/images/primary-logo.png" alt="Airtm" loading="lazy">
+      </a>
+      <div class="d-flex justify-content-center align-items-center">
+        <ng-container *ngFor="let language of languageList">
+          <a class="text-info font-14 fw-bold text-decoration-none cursor-pointer" (click)="switchLanguage(language)" *ngIf="language.code !== (language$ | async)?.code">{{ language.code | uppercase }}</a>
+        </ng-container>
+      </div>
+    </div>
+  </div>
+</section>

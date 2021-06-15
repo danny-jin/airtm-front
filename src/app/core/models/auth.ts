@@ -8,14 +8,8 @@ export enum UserRole {
 }
 
 export enum UserType {
-  PersonalAccount = 'PERSONAL_ACCOUNT',
-  BusinessAccount = 'BUSINESS_ACCOUNT'
-}
-
-export enum TierLevel {
-  None = 'NONE',
-  IdVerified = 'ID_VERIFIED',
-  AddressVerified = 'ADDRESS_VERIFIED'
+  Individual = 'INDIVIDUAL',
+  Business = 'BUSINESS'
 }
 
 export enum VerifyType {
@@ -56,7 +50,6 @@ export interface User extends Entity {
   email: string;
   type: UserType;
   twoFactorType: TwoFactorType;
-  tierLevel: TierLevel;
   device: string;
   browser: string;
   referralId: string;

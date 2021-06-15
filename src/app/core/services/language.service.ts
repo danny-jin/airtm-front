@@ -1,9 +1,7 @@
 import { Injectable } from '@angular/core';
-import { Router } from '@angular/router';
 import { TranslateService } from '@ngx-translate/core';
 import { BehaviorSubject } from 'rxjs';
 
-import { GlobalService } from './global.service';
 import { Language } from '../models/language';
 import { languageList } from '../constants/language';
 import enLanguage from '../../../assets/i18n/en.json';
@@ -20,23 +18,17 @@ export class LanguageService {
   language$: BehaviorSubject<Language> = new BehaviorSubject<Language>(this.language);
 
   constructor(
-    private router: Router,
     private translate: TranslateService,
-    private globalService: GlobalService
   ) { }
 
-  initLanguage(languageCode = null): void {
+  initLanguage(): void {
     const languages = languageList.map((item: Language) => {
       return item.code;
     });
     this.translate.addLangs(languages);
-    const found = languageList.find((item: any) => item.code === languageCode);
-    if (found) {
-      this.globalService.setLanguageCode(found.code);
-      this.switchLanguage(found);
-    } else {
-      this.router.navigateByUrl(languages[0]).then();
-    }
+    this.translate.setTranslation('en', enLanguage);
+    this.translate.setDefaultLang('en');
+    this.setLanguage(languageList[0]);
   }
 
   setLanguage(lang: Language): void {
@@ -46,6 +38,7 @@ export class LanguageService {
 
   switchLanguage(lang: Language): void {
     this.setLanguage(lang);
+    this.translate.use(lang.code);
     let languageFile = enLanguage;
     switch (lang.code) {
       case 'en':
@@ -56,7 +49,6 @@ export class LanguageService {
         break;
     }
     this.translate.setTranslation(lang.code, languageFile);
-    this.translate.use(lang.code);
   }
 
 }

@@ -1,0 +1,13 @@
+@import "../../../../assets/theme";
+
+ngx-intl-tel-input::ng-deep {
+  width: 100%;
+  .iti {
+    width: 100%;
+    input {
+      height: 38px;
+      border: none !important;
+      outline: none !important;
+    }
+  }
+}
