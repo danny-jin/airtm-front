@@ -1,0 +1,80 @@
+.cursor-pointer {
+  cursor: pointer;
+}
+
+.x-middle {
+  @include absolute_middle(x);
+}
+
+.y-middle {
+  @include absolute_middle(y);
+}
+
+.image-fit {
+  @include image_fit();
+}
+
+.absolute-fit-parent {
+  @include absolute_fit_parent();
+}
+
+.box-shadow-none {
+  box-shadow: none !important;
+}
+
+.list-style-none {
+  list-style: none !important;
+}
+
+.pretty-scroll {
+  @include pretty-scroll;
+}
+
+.flex-fit-parent {
+  min-height: 0;
+  flex: 1;
+}
+
+.line-break-anywhere {
+  line-break: anywhere;
+}
+
+.object-fit-cover {
+  object-fit: cover;
+}
+
+.sticky {
+  position: fixed;
+  width: 100%;
+  left: 0;
+  right: 0;
+  top: 0;
+  z-index: 100;
+}
+
+.font-weight-bold {
+  font-weight: 500;
+}
+
+ejs-dropdownlist::ng-deep {
+  .e-input-value {
+    display: flex !important;
+    align-items: center;
+  }
+}
+
+/* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+input[type=number] {
+  -moz-appearance: textfield;
+}
+
+.outline-none {
+  outline: none !important;
+}
