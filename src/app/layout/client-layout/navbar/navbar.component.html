@@ -1,0 +1,23 @@
+<div class="height-{{ headerHeight }} position-relative elevation-header">
+  <div class="d-flex w-100 h-100 px-20 justify-content-between align-items-center z-index-1">
+    <a routerLink="/">
+      <img class="height-40" defaultImage="assets/images/placeholder.png" lazyLoad="assets/images/primary-logo.png" alt="Airtm" loading="lazy">
+    </a>
+    <div class="d-flex justify-content-center align-items-center">
+      <div class="me-10">
+        <app-balance-menu></app-balance-menu>
+      </div>
+      <div class="me-10">
+        <app-notification-menu></app-notification-menu>
+      </div>
+      <div class="me-10">
+        <app-profile-menu></app-profile-menu>
+      </div>
+      <div class="language">
+        <ng-container *ngFor="let language of languageList">
+          <a class="text-info font-14 fw-bold text-decoration-none cursor-pointer" (click)="switchLanguage(language)" *ngIf="language.code !== (language$ | async)?.code">{{ language.code | uppercase }}</a>
+        </ng-container>
+      </div>
+    </div>
+  </div>
+</div>

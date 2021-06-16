@@ -28,14 +28,14 @@
           <button class="btn btn-primary w-100 rounded-pill" (click)="login()">{{ 'auth.login.root' | translate }}</button>
         </form>
         <div class="d-flex justify-content-center mt-30">
-          <span class="text-primary">{{ 'auth.login.forgot-your-password' | translate }}</span>
+          <span class="text-primary cursor-pointer">{{ 'auth.login.forgot-your-password' | translate }}</span>
         </div>
         <app-separator></app-separator>
         <div class="d-flex justify-content-center align-items-center mb-30">
           <span class="text-info fw-normal me-10">{{ 'auth.login.not-registered-yet' | translate }}</span>
           <button class="btn btn-outline-primary width-160 height-35 rounded-pill" ngxScrollTo="root" [routerLink]="[ROUTES.auth.signUp] | routeToAbsolute">{{ 'auth.login.create-an-account' | translate }}</button>
         </div>
-        <div class="d-flex justify-content-center">
+        <div class="d-flex justify-content-center mb-100">
           <img class="height-50" defaultImage="assets/images/placeholder.png" lazyLoad="assets/images/playstore-logo.png" alt="Your digital account" loading="lazy">
         </div>
       </div>

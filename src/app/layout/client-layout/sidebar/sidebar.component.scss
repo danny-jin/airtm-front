@@ -1,0 +1,23 @@
+@import "../../../../assets/theme";
+
+.menu-item {
+  span {
+    color: $blue-bayoux;
+  }
+  app-icon::ng-deep {
+    svg {
+      fill: $blue-bayoux !important;
+    }
+  }
+
+  &:hover, &:active, &:focus, &.active {
+    span {
+      color: $dodger-blue;
+    }
+    app-icon::ng-deep {
+      svg {
+        fill: $dodger-blue !important;
+      }
+    }
+  }
+}

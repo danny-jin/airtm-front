@@ -1,0 +1,19 @@
+@import "../../../../../assets/theme";
+
+.profile-menu {
+  padding: 3px;
+
+  ngx-avatar::ng-deep {
+    .avatar-content {
+      cursor: pointer;
+    }
+  }
+
+  span {
+    margin-left: 2px;
+  }
+
+  &:hover, &:active, &:focus, &.active {
+    background: $iron;
+  }
+}

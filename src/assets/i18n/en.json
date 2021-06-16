@@ -22,6 +22,17 @@
       "virtual-card": "Virtual card",
       "rates": "Rates",
       "blog": "Blog"
+    },
+    "client": {
+      "push-notification": "Push notification",
+      "mark-all-read": "Mark all read",
+      "no-unread-notifications": "No unread notifications :)",
+      "view-all-activity": "View all activity",
+      "main-balance": "Main balance",
+      "total": "Total",
+      "show-my-currency": "Show my currency",
+      "manage-local-settings": "Manage local settings",
+      "push-notification-notes": "Note: Users can only enable push notifications if they're on Chrome or Firefox on Desktop or Android devices."
     }
   },
   "footer": {
@@ -43,6 +54,9 @@
         "rates": "Rates"
       },
       "notice": "CONTENT DISCLAIMER: References made to third party names, logos and trademarks on this website are to identify corresponding goods and services that Airtm users can themselves exchange through P2P transactions facilitated by Airtm. Unless otherwise specified, the trademark holders are not affiliated with Airtm, our products or website, and they do not sponsor or endorse Airtm services. Such references are included strictly as nominative fair use under applicable trademark law and remain fully the property of their respective trademark holders."
+    },
+    "common": {
+      "product-updates": "Product updates"
     }
   },
   "landing": {
@@ -146,11 +160,46 @@
       "exchange-cryptocurrencies": "Exchange cryptocurrencies.",
       "fast-safe-reliable": "Fast, safe & reliable."
     },
+    "complete-profile": {
+      "please-complete-your-profile": "Please complete your profile.",
+      "first-name": "First name",
+      "last-name": "Last name",
+      "second-last-name": "Second Last Name (Optional)",
+      "name-must-match-government-issued-id": "* Name must match government issued ID.",
+      "address-line-1": "Address line 1",
+      "address-line-2": "Address line 2",
+      "city": "City",
+      "country": "Country",
+      "country-you-live-in": "* Country you live in",
+      "phone": "Phone",
+      "birthday": "Birthday",
+      "inviter": "Inviter (If applicable)",
+      "verify-phone-to-complete-profile": "Verify phone to complete profile",
+      "state": "State",
+      "postal-code": "Postal code",
+      "enter-the-email-or-username": "Enter the email or username of the person who invited you to Airtm"
+    },
     "notify": {
       "minimum-8-characters": "Minimum 8 characters",
       "at-least-1-special-character": "At least 1 Special character",
       "at-least-1-upper-case": "At least 1 UPPER CASE",
       "at-least-1-number": "At least 1 Number"
     }
+  },
+  "sidebar": {
+    "home": "Home",
+    "add": "Add",
+    "withdraw": "Withdraw",
+    "transfers": "Transfers",
+    "send-request": "Send/Request",
+    "virtual-cards": "Virtual cards",
+    "activity": "Activity",
+    "peer-transfers": "Peer transfers",
+    "crypto": "Crypto",
+    "invite-friends": "Invite friends",
+    "store-directory": "Store directory",
+    "settings": "Settings",
+    "help": "Help",
+    "logout": "Logout"
   }
 }

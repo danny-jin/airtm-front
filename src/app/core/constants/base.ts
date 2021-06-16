@@ -1,1 +1,2 @@
-export const headerHeight = 90;
+export const landingHeaderHeight = 90;
+export const headerHeight = 60;

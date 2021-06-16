@@ -1,3 +1,12 @@
+export enum WindowSize {
+  xs = 'XS',
+  sm = 'SM',
+  md = 'MD',
+  lg = 'LG',
+  xl = 'XL',
+  xxl = 'XXL'
+}
+
 export enum PasswordStrengthType {
   None = 'NONE',
   Weak = 'WEAK',

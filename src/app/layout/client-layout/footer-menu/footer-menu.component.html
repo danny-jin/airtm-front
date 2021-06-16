@@ -1,0 +1,28 @@
+<div class="d-flex position-relative d-sm-none elevation-navigation justify-content-around bg-color-wild-sand height-60">
+  <ng-container *ngFor="let item of tabItems">
+    <div class="menu-item d-flex align-items-center h-100 px-15" [routerLink]="item.route | routeToAbsolute" routerLinkActive="active" *ngIf="item.route; else moreItem;">
+      <app-icon [icon]="item.icon" [width]="24" color="blue-bayoux" hoverColor="blue-bayoux"></app-icon>
+    </div>
+    <ng-template #moreItem>
+      <div class="menu-item d-flex align-items-center h-100 px-15" (click)="showMore = !showMore">
+        <app-icon [icon]="item.icon" [width]="24" color="blue-bayoux" hoverColor="blue-bayoux"></app-icon>
+      </div>
+    </ng-template>
+  </ng-container>
+  <div class="position-absolute bottom-55 bg-white right-10 shadow-simple width-200 rounded-2 elevation-18 py-15" *ngIf="showMore">
+    <ng-container *ngFor="let item of moreItems; let i = index;">
+      <div class="d-flex align-items-center menu-item px-15 mb-20"
+           [routerLink]="item.route | routeToAbsolute" routerLinkActive="active" *ngIf="item.route; else logoutItem;" (click)="showMore = false">
+        <app-icon [icon]="item.icon" [width]="24" color="blue-bayoux" hoverColor="blue-bayoux"></app-icon>
+        <span class="ms-10 fw-normal cursor-pointer">{{ item.label | translate }}</span>
+      </div>
+      <app-separator [height]="20" *ngIf="i === 3"></app-separator>
+      <ng-template #logoutItem>
+        <div class="d-flex align-items-center menu-item px-15" (click)="logout()" (click)="showMore = false">
+          <app-icon [icon]="item.icon" [width]="24" color="blue-bayoux" hoverColor="blue-bayoux"></app-icon>
+          <span class="ms-10 fw-normal cursor-pointer">{{ item.label | translate }}</span>
+        </div>
+      </ng-template>
+    </ng-container>
+  </div>
+</div>

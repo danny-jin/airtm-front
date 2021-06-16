@@ -10,7 +10,11 @@ const routes: Routes = [
     children: [
       { path: '', redirectTo: ROUTES.auth.login },
       { path: ROUTES.auth.login, loadChildren: () => import('./login/login.module').then(m => m.LoginModule) },
-      { path: ROUTES.auth.signUp, loadChildren: () => import('./signup/signup.module').then(m => m.SignupModule) }
+      { path: ROUTES.auth.signUp, loadChildren: () => import('./signup/signup.module').then(m => m.SignupModule) },
+      {
+        path: ROUTES.auth.completeProfile,
+        loadChildren: () => import('./complete-profile/complete-profile.module').then(m => m.CompleteProfileModule)
+      }
     ]
   }
 ];
@@ -19,4 +23,5 @@ const routes: Routes = [
   imports: [RouterModule.forChild(routes)],
   exports: [RouterModule]
 })
-export class AuthRoutingModule { }
+export class AuthRoutingModule {
+}

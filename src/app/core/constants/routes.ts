@@ -5,14 +5,30 @@ export const ROUTES = {
   },
   auth: {
     login: 'login',
-    signUp: 'sign-up'
+    signUp: 'sign-up',
+    completeProfile: 'complete-profile'
   },
   landingPages: {
     storeDirectory: 'store-directory',
     virtualCard: 'virtual-card',
     rates: 'rates',
     blog: 'blog',
-  }
+  },
+  client: {
+    home: 'home',
+    add: 'add',
+    withdraw: 'withdraw',
+    transfers: 'transfers',
+    sendRequest: 'send-request',
+    virtualCards: 'virtual-cards',
+    activity: 'activity',
+    peerTransfers: 'peer-transfers',
+    crypto: 'crypto',
+    inviteFriends: 'invite-friends',
+    storeDirectory: 'store-directory',
+    settings: 'settings',
+    help: 'help'
+  },
 };
 
 export function toAbsolutePath(path: string | string[]): string {

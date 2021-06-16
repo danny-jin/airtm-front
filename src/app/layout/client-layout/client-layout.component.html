@@ -1,0 +1,16 @@
+<section class="d-flex flex-column absolute-fit-parent">
+  <app-client-navbar></app-client-navbar>
+  <div class="d-flex flex-grow-1">
+    <app-client-sidebar></app-client-sidebar>
+    <div class="d-flex flex-column flex-grow-1">
+      <div class="pt-30">
+        <router-outlet></router-outlet>
+      </div>
+      <div class="d-flex justify-content-center my-20">
+        <span class="font-12 text-info me-20">© Airtm, Inc. 2021 - v8.12.1</span>
+        <a class="font-12 text-primary text-decoration-none cursor-pointer">{{ 'footer.common.product-updates' | translate }}</a>
+      </div>
+    </div>
+  </div>
+  <app-client-footer-menu></app-client-footer-menu>
+</section>

@@ -8,6 +8,7 @@ import { Component, OnInit, Input } from '@angular/core';
 export class SeparatorComponent implements OnInit {
 
   @Input() separatorText = '';
+  @Input() height = 40;
 
   constructor() { }
 

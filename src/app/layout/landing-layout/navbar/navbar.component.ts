@@ -1,10 +1,9 @@
 import { Component, HostListener, OnInit } from '@angular/core';
-import { Router } from '@angular/router';
 import { animate, state, style, transition, trigger } from '@angular/animations';
 
 import { NavItem } from '../../../core/models/nav';
 import { languageList } from '../../../core/constants/language';
-import { headerHeight } from '../../../core/constants/base';
+import { landingHeaderHeight } from '../../../core/constants/base';
 import { ROUTES } from '../../../core/constants/routes';
 import { LanguageService } from '../../../core/services/language.service';
 import { Language } from '../../../core/models/language';
@@ -38,7 +37,6 @@ export class NavbarComponent implements OnInit {
   language$ = this.languageService.language$;
 
   constructor(
-    private router: Router,
     private languageService: LanguageService,
   ) { }
 
@@ -47,7 +45,7 @@ export class NavbarComponent implements OnInit {
 
   @HostListener('window:scroll', [])
   onWindowScroll(): void {
-    this.isSticky = window.scrollY > headerHeight;
+    this.isSticky = window.scrollY > landingHeaderHeight;
   }
 
   switchLanguage(language: Language): void {

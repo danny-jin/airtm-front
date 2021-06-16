@@ -1,0 +1,22 @@
+@import "../../../../../assets/theme";
+
+.notification-menu {
+  &:hover, &:active, &:focus, &.active {
+    background: $iron;
+  }
+  &:after {
+    display: none !important;
+  }
+}
+
+@include media-breakpoint-down(xs) {
+  .notification-box {
+    margin-left: -170px;
+  }
+}
+
+@include media-breakpoint-up(sm) {
+  .notification-box {
+    margin-left: 0;
+  }
+}

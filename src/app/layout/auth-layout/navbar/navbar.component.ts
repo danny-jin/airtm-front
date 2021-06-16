@@ -1,5 +1,4 @@
 import { Component, HostListener, OnInit } from '@angular/core';
-import { Router } from '@angular/router';
 
 import { LanguageService } from '../../../core/services/language.service';
 import { headerHeight } from '../../../core/constants/base';
@@ -13,12 +12,12 @@ import { Language } from '../../../core/models/language';
 })
 export class NavbarComponent implements OnInit {
 
+  headerHeight = headerHeight;
   isSticky = false;
   languageList = languageList;
   language$ = this.languageService.language$;
 
   constructor(
-    private router: Router,
     private languageService: LanguageService
   ) { }
 

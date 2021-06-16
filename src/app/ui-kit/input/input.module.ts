@@ -2,6 +2,7 @@ import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { TranslateModule } from '@ngx-translate/core';
+import { NgbDatepickerModule } from '@ng-bootstrap/ng-bootstrap';
 import { DropDownListModule } from '@syncfusion/ej2-angular-dropdowns';
 import { NgxIntlTelInputModule } from 'ngx-intl-tel-input';
 import { NgxDaterangepickerMd } from 'ngx-daterangepicker-material';
@@ -14,6 +15,7 @@ import { PasswordInputComponent } from './password-input/password-input.componen
 import { PhoneNumberInputComponent } from './phone-number-input/phone-number-input.component';
 import { SelectComponent } from './select/select.component';
 import { DateRangePickerComponent } from './date-range-picker/date-range-picker.component';
+import { DatePickerComponent } from './date-picker/date-picker.component';
 
 @NgModule({
   declarations: [
@@ -21,13 +23,15 @@ import { DateRangePickerComponent } from './date-range-picker/date-range-picker.
     PasswordInputComponent,
     PhoneNumberInputComponent,
     SelectComponent,
-    DateRangePickerComponent
+    DateRangePickerComponent,
+    DatePickerComponent
   ],
   imports: [
     CommonModule,
     FormsModule,
     ReactiveFormsModule,
     TranslateModule,
+    NgbDatepickerModule,
     DropDownListModule,
     NgxIntlTelInputModule,
     NgxDaterangepickerMd.forRoot(),
@@ -39,7 +43,8 @@ import { DateRangePickerComponent } from './date-range-picker/date-range-picker.
     PasswordInputComponent,
     PhoneNumberInputComponent,
     SelectComponent,
-    DateRangePickerComponent
+    DateRangePickerComponent,
+    DatePickerComponent
   ]
 })
 export class InputModule {

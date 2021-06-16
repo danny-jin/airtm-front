@@ -1,0 +1,55 @@
+<section>
+  <div class="container">
+    <div class="row justify-content-center mt-50">
+      <div class="col-12 col-md-8 col-lg-6">
+        <div class="d-flex mb-50">
+          <h2 class="text-dark font-weight-bold">{{ 'auth.complete-profile.please-complete-your-profile' | translate }}</h2>
+        </div>
+        <form class="w-100" [formGroup]="form">
+          <div class="d-flex flex-column">
+            <app-text-input id="{{ prefix }}_firstName" placeholder="{{ 'auth.complete-profile.first-name' | translate }}" formControlName="firstName"></app-text-input>
+            <div class="row">
+              <div class="col-12 col-lg-6">
+                <app-text-input id="{{ prefix }}_lastName" placeholder="{{ 'auth.complete-profile.last-name' | translate }}" formControlName="lastName"></app-text-input>
+              </div>
+              <div class="col-12 col-lg-6">
+                <app-text-input id="{{ prefix }}_secondLastName" placeholder="{{ 'auth.complete-profile.second-last-name' | translate }}" formControlName="secondLastName"></app-text-input>
+              </div>
+            </div>
+            <div class="d-flex justify-content-center">
+              <span class="text-info font-12">{{ 'auth.complete-profile.name-must-match-government-issued-id' | translate }}</span>
+            </div>
+            <app-text-input id="{{ prefix }}_addressLine1" placeholder="{{ 'auth.complete-profile.address-line-1' | translate }}" formControlName="addressLine1"></app-text-input>
+            <app-text-input id="{{ prefix }}_addressLine2" placeholder="{{ 'auth.complete-profile.address-line-2' | translate }}" formControlName="addressLine2"></app-text-input>
+            <app-text-input id="{{ prefix }}_city" placeholder="{{ 'auth.complete-profile.city' | translate }}" formControlName="city"></app-text-input>
+            <app-select [options]="countryList" id="{{ prefix }}_country" formControlName="country"></app-select>
+            <div class="d-flex justify-content-center mb-20">
+              <span class="text-info font-12">{{ 'auth.complete-profile.country-you-live-in' | translate }}</span>
+            </div>
+            <div class="row">
+              <div class="col-12 col-lg-6">
+                <app-text-input id="{{ prefix }}_state" placeholder="{{ 'auth.complete-profile.state' | translate }}" formControlName="state"></app-text-input>
+              </div>
+              <div class="col-12 col-lg-6">
+                <app-text-input id="{{ prefix }}_postalCode" placeholder="{{ 'auth.complete-profile.postal-code' | translate }}" formControlName="postalCode"></app-text-input>
+              </div>
+            </div>
+            <div class="mt-20">
+              <app-phone-number-input id="{{ prefix }}_phone" formControlName="mobile" label="{{ 'auth.complete-profile.phone' | translate }}" (mobileChanged)="mobileChanged($event)"></app-phone-number-input>
+            </div>
+            <div class="mt-20">
+              <app-date-picker id="{{ prefix }}_birthday" formControlName="birthday" label="{{ 'auth.complete-profile.birthday' | translate }}" (chosenDate)="chosenDate($event)"></app-date-picker>
+            </div>
+            <div class="mt-20">
+              <app-text-input id="{{ prefix }}_inviter" formControlName="inviter" label="{{ 'auth.complete-profile.inviter' | translate }}" placeholder="{{ 'auth.complete-profile.enter-the-email-or-username' | translate }}"></app-text-input>
+            </div>
+            <div class="d-flex justify-content-center mt-30 mb-80">
+              <button class="btn btn-primary rounded-pill width-300" (click)="verifyProfile()">{{ 'auth.complete-profile.verify-phone-to-complete-profile' | translate }}</button>
+            </div>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+  <app-spinner *ngIf="isLoading"></app-spinner>
+</section>

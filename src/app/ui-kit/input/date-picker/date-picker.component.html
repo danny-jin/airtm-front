@@ -1,0 +1,11 @@
+<div class="form-group" [class.label-input-group]="label">
+  <label class="form-label">
+    <div class="d-flex mb-5" *ngIf="label">
+      <span class="text-info">{{ label }}</span>
+    </div>
+    <div class="wrapper">
+      <input class="border-0 height-40 w-100 outline-none" type="text" ngbDatepicker #d="ngbDatepicker" [(ngModel)]="defaultValue" (ngModelChange)="choose()"/>
+      <app-icon icon="calendar" [width]="24" (click)="d.toggle()"></app-icon>
+    </div>
+  </label>
+</div>

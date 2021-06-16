@@ -1,0 +1,9 @@
+<div #dropdown="ngbDropdown" ngbDropdown (openChange)="openChanged($event)">
+  <div class="notification-menu d-flex align-items-center p-5 rounded-pill" ngbDropdownToggle>
+    <app-icon icon="bell" [width]="24" color="blue-bayoux" hoverColor="blue-bayoux"></app-icon>
+    <app-icon icon="{{ isOpened ? 'arrow-up' : 'arrow-down' }}" [width]="24" color="blue-bayoux"></app-icon>
+  </div>
+  <div class="notification-box position-absolute width-300 border-0 elevation-18" ngbDropdownMenu aria-labelledby="dropdown">
+    <app-notification-box (closeBox)="dropdown.close()"></app-notification-box>
+  </div>
+</div>

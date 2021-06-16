@@ -1,0 +1,30 @@
+<div class="rounded-2">
+  <div class="d-flex flex-column py-10 px-20">
+    <div class="d-flex justify-content-between mb-10">
+      <span class="text-info text-overflow me-15">{{ 'navbar.client.main-balance' | translate }}</span>
+      <div class="d-flex me-15">
+        <span class="text-dark me-10">{{ 0 | number | currency }}</span>
+        <span class="text-info">AirUSD</span>
+      </div>
+      <div class="d-flex">
+        <span class="text-dark me-10">S{{ 0 | number | currency }}</span>
+        <span class="text-info">SGD</span>
+      </div>
+    </div>
+    <div class="d-flex justify-content-between mb-10">
+      <span class="text-info me-10">{{ 'navbar.client.total' | translate }}</span>
+      <div class="d-flex">
+        <span class="text-dark font-weight-bold me-5">S{{ 0 | number | currency }}</span>
+        <span class="text-info">SGD</span>
+      </div>
+    </div>
+    <div class="d-flex align-items-center mb-10">
+      <mat-slide-toggle (change)="showCurrency($event)"></mat-slide-toggle>
+      <span class="text-info ms-10">{{ 'navbar.client.show-my-currency' | translate }}</span>
+    </div>
+  </div>
+  <div class="d-flex px-20 pt-20 pb-10 border-top border-color-iron">
+    <a class="text-primary cursor-pointer text-decoration-none" (click)="closeBox.emit()">{{ 'navbar.client.manage-local-settings' | translate }}</a>
+  </div>
+</div>
+

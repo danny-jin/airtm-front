@@ -1,7 +1,7 @@
 <div class="toastr-wrapper">
   <div *ngFor="let item of toastrs; let i = index" @fly_toastr
        [ngClass]="item.type | toastrColor : 'bg'"
-       class="alert d-flex shadow-primary align-items-center" role="alert">
+       class="alert d-flex elevation-navigation align-items-center" role="alert">
     <div class="d-flex">
       <img class="width-20 me-10" [src]="item.type | toastrColor : 'image'" [alt]="item.type">
     </div>
