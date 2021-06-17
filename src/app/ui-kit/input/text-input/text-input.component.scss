@@ -1,0 +1,9 @@
+@import "../../../../assets/theme";
+
+a {
+  color: $dodger-blue;
+  &:active, &:focus {
+    color: $denim;
+    font-weight: 500;
+  }
+}

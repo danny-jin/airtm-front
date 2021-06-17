@@ -47,7 +47,7 @@ const routes: Routes = [
       },
       {
         path: ROUTES.client.inviteFriends,
-        loadChildren: () => import('./home/home.module').then(m => m.HomeModule),
+        loadChildren: () => import('./invite-friends/invite-friends.module').then(m => m.InviteFriendsModule),
       },
       {
         path: ROUTES.client.storeDirectory,
@@ -57,10 +57,6 @@ const routes: Routes = [
         path: ROUTES.client.settings,
         loadChildren: () => import('./home/home.module').then(m => m.HomeModule),
       },
-      {
-        path: ROUTES.client.help,
-        loadChildren: () => import('./home/home.module').then(m => m.HomeModule),
-      }
     ]
   }
 ];

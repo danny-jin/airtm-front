@@ -9,10 +9,11 @@
     "get-started": "Get Started",
     "warning": "Warning",
     "loading": "Loading",
-    "slideToCompletePuzzle": "Slide To complete the puzzle"
+    "slide-to-complete-puzzle": "Slide To complete the puzzle",
+    "copy-link": "Copy link"
   },
   "dialog": {
-    "securityVerification": {
+    "security-verification": {
       "root": "Security Verification"
     }
   },
@@ -201,5 +202,33 @@
     "settings": "Settings",
     "help": "Help",
     "logout": "Logout"
+  },
+  "client": {
+    "home": {
+    },
+    "invite-friends": {
+      "earn-air-usd": "Earn AirUSD by inviting friends to Airtm",
+      "get-paid-by": "Get paid by sharing Airtm with friends, family, and followers! Give $2.00 AirUSD and get $3.00 AirUSD for each guest who completes 3 adds funds of at least $5.00 AirUSD each as a verified user. Also, you will earn a variable percent of the volume of each transaction your guests complete.",
+      "learn-more": "Learn more about our referral program",
+      "here": "here",
+      "rewards": "*Rewards are paid 24 hours after invite requirements are achieved.",
+      "verify-to-receive-rewards": "Verify to receive rewards",
+      "enter-email-address": "Enter email address(es)",
+      "email-addresses-separated-by-commas": "Email addresses separated by commas",
+      "or-share-your-link": "or share your link",
+      "copy-link": "Copy link",
+      "facebook": "Facebook",
+      "whatsapp": "WhatsApp",
+      "your-invites-must": "Your invites must sign up within 24 hours after clicking through your invite link using the same device and browser for you to receive credit. Rewards are paid 24 hours after invite requirements are achieved.",
+      "out-of": "Out of",
+      "invitees-who": "invitees who have signed up for Airtm",
+      "have-achieved": "have achieved the invite reward and completed",
+      "add-withdraw-transactions": "add/withdraw transactions.",
+      "you-have-earned": "You have earned",
+      "from-invite-rewards-and": "from invite rewards and",
+      "from-add-withdraw-commissions": "from add/withdraw commissions.",
+      "you-are-about-to-send": "You're about to send an invitation to:",
+      "invite": "Invite"
+    }
   }
 }

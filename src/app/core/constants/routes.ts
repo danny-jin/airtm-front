@@ -26,8 +26,7 @@ export const ROUTES = {
     crypto: 'crypto',
     inviteFriends: 'invite-friends',
     storeDirectory: 'store-directory',
-    settings: 'settings',
-    help: 'help'
+    settings: 'settings'
   },
 };
 

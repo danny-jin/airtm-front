@@ -24,7 +24,7 @@ export class PuzzleDialogComponent implements OnInit {
       repeatIcon: 'fa fa-redo',
       loadingText: `${this.translate.instant('common.loading')} ...`,
       failedText: this.translate.instant('common.tryAgain'),
-      barText: this.translate.instant('common.slideToCompletePuzzle'),
+      barText: this.translate.instant('common.slide-to-complete-puzzle'),
       onSuccess: () => {
         this.dialogRef.close(true);
       }

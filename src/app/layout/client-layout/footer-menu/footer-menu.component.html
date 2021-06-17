@@ -12,16 +12,22 @@
   <div class="position-absolute bottom-55 bg-white right-10 shadow-simple width-200 rounded-2 elevation-18 py-15" *ngIf="showMore">
     <ng-container *ngFor="let item of moreItems; let i = index;">
       <div class="d-flex align-items-center menu-item px-15 mb-20"
-           [routerLink]="item.route | routeToAbsolute" routerLinkActive="active" *ngIf="item.route; else logoutItem;" (click)="showMore = false">
+           [routerLink]="item.route | routeToAbsolute" routerLinkActive="active" *ngIf="item.route; else noRouteItem;" (click)="showMore = false">
         <app-icon [icon]="item.icon" [width]="24" color="blue-bayoux" hoverColor="blue-bayoux"></app-icon>
         <span class="ms-10 fw-normal cursor-pointer">{{ item.label | translate }}</span>
       </div>
       <app-separator [height]="20" *ngIf="i === 3"></app-separator>
-      <ng-template #logoutItem>
-        <div class="d-flex align-items-center menu-item px-15" (click)="logout()" (click)="showMore = false">
+      <ng-template #noRouteItem>
+        <div class="d-flex align-items-center menu-item px-15 mb-20" (click)="externalLink(item.externalLink)" *ngIf="item.externalLink; else logoutItem;">
           <app-icon [icon]="item.icon" [width]="24" color="blue-bayoux" hoverColor="blue-bayoux"></app-icon>
           <span class="ms-10 fw-normal cursor-pointer">{{ item.label | translate }}</span>
         </div>
+        <ng-template #logoutItem>
+          <div class="d-flex align-items-center menu-item px-15 mb-20" (click)="logout()">
+            <app-icon [icon]="item.icon" [width]="24" color="blue-bayoux" hoverColor="blue-bayoux"></app-icon>
+            <span class="ms-10 fw-normal cursor-pointer">{{ item.label | translate }}</span>
+          </div>
+        </ng-template>
       </ng-template>
     </ng-container>
   </div>

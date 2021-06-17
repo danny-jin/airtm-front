@@ -1,4 +1,4 @@
-import { Component, forwardRef, Input } from '@angular/core';
+import { Component, EventEmitter, forwardRef, Input, Output } from '@angular/core';
 import { ControlValueAccessor, NG_VALUE_ACCESSOR } from '@angular/forms';
 
 @Component({
@@ -20,12 +20,14 @@ export class TextInputComponent implements ControlValueAccessor {
   @Input() type = 'text';
   @Input() showInput = true;
   @Input() showArrow = false;
+  @Input() hasCopyLink = false;
   // @ts-ignore
   @Input() value;
   // @ts-ignore
   @Input() min;
   // @ts-ignore
   @Input() readonly;
+  @Output() copyLink: EventEmitter<string> = new EventEmitter<string>();
 
   // @ts-ignore
   onChange;
@@ -53,4 +55,5 @@ export class TextInputComponent implements ControlValueAccessor {
       this.onChange(value);
     }
   }
+
 }

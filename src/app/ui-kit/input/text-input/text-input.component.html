@@ -4,7 +4,10 @@
       <span class="text-info">{{ label }}</span>
     </div>
     <div class="wrapper">
-      <input class="form-control" [min]="min" [type]="type" [placeholder]="placeholder" [(ngModel)]="value" (ngModelChange)="change($event)" [readonly]="readonly">
+      <input class="form-control" [class.width-n100]="hasCopyLink" [min]="min" [type]="type" [placeholder]="placeholder" [(ngModel)]="value" (ngModelChange)="change($event)" [readonly]="readonly">
+      <ng-container *ngIf="hasCopyLink">
+        <a class="ms-15 width-85 fw-normal text-decoration-none cursor-pointer user-select-none" (click)="copyLink.emit(value)">{{ 'common.copy-link' | translate }}</a>
+      </ng-container>
     </div>
   </label>
 </div>

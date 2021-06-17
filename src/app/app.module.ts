@@ -2,6 +2,7 @@ import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { HttpClientModule, HttpClient, HTTP_INTERCEPTORS } from '@angular/common/http';
+import { ClipboardModule } from '@angular/cdk/clipboard';
 import { TranslateModule, TranslateLoader } from '@ngx-translate/core';
 import { NgProgressModule } from 'ngx-progressbar';
 import { NgProgressRouterModule } from 'ngx-progressbar/router';
@@ -28,6 +29,7 @@ import { httpTranslateLoader } from './core/utils/translate.util';
     NgProgressRouterModule,
     ToastrModule,
     HttpClientModule,
+    ClipboardModule,
     TranslateModule.forRoot({
       loader: {
         provide: TranslateLoader,

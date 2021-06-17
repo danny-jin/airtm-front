@@ -75,8 +75,9 @@ export class FooterMenuComponent implements OnInit {
     },
     {
       icon: 'help',
-      label: 'sidebar.invite-friends',
-      route: toAbsolutePath(ROUTES.client.help)
+      label: 'sidebar.help',
+      route: '',
+      externalLink: 'https://help.airtm.com'
     },
     {
       icon: 'logout',
@@ -92,6 +93,10 @@ export class FooterMenuComponent implements OnInit {
   }
 
   logout(): void {
+  }
+
+  externalLink(link: string): void {
+    window.open(link, '_blank');
   }
 
 }

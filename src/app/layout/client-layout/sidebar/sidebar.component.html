@@ -1,16 +1,22 @@
 <div class="h-100 width-{{ currentSidebarWidth }} bg-color-wild-sand pt-30" *ngIf="currentSidebarWidth > 0">
   <ng-container *ngFor="let item of sidebarItems; let i = index;">
     <div class="d-flex align-items-center menu-item px-15 mb-20" [class.justify-content-center]="currentSidebarWidth === mobileSidebarWidth"
-         [routerLink]="item.route | routeToAbsolute" routerLinkActive="active" *ngIf="item.route; else logoutItem;">
+         [routerLink]="item.route | routeToAbsolute" routerLinkActive="active" *ngIf="item.route; else noRouteItem;">
       <app-icon [icon]="item.icon" [width]="24" color="blue-bayoux" hoverColor="blue-bayoux"></app-icon>
       <span class="ms-10 fw-normal cursor-pointer" *ngIf="currentSidebarWidth === sidebarWidth">{{ item.label | translate }}</span>
     </div>
     <app-separator [height]="20" *ngIf="i === 8"></app-separator>
-    <ng-template #logoutItem>
-      <div class="d-flex align-items-center menu-item px-15 mb-20" [class.justify-content-center]="currentSidebarWidth === mobileSidebarWidth" (click)="logout()">
+    <ng-template #noRouteItem>
+      <div class="d-flex align-items-center menu-item px-15 mb-20" [class.justify-content-center]="currentSidebarWidth === mobileSidebarWidth" (click)="externalLink(item.externalLink)" *ngIf="item.externalLink; else logoutItem;">
         <app-icon [icon]="item.icon" [width]="24" color="blue-bayoux" hoverColor="blue-bayoux"></app-icon>
         <span class="ms-10 fw-normal cursor-pointer" *ngIf="currentSidebarWidth === sidebarWidth">{{ item.label | translate }}</span>
       </div>
+      <ng-template #logoutItem>
+        <div class="d-flex align-items-center menu-item px-15 mb-20" [class.justify-content-center]="currentSidebarWidth === mobileSidebarWidth" (click)="logout()">
+          <app-icon [icon]="item.icon" [width]="24" color="blue-bayoux" hoverColor="blue-bayoux"></app-icon>
+          <span class="ms-10 fw-normal cursor-pointer" *ngIf="currentSidebarWidth === sidebarWidth">{{ item.label | translate }}</span>
+        </div>
+      </ng-template>
     </ng-template>
   </ng-container>
 </div>
