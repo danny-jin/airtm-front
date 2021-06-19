@@ -16,7 +16,7 @@
               <span class="fs-5 text-info">{{ 'landing.home.your-digital-dollar-account.with-no-minimum-balances-or-monthly-fees' | translate }}</span>
             </div>
             <div class="d-flex justify-content-center mb-10">
-              <button class="btn btn-primary width-160 height-45 rounded-pill">{{ 'common.get-started' | translate }}</button>
+              <button class="btn btn-primary width-160 height-45 rounded-pill" [routerLink]="[ROUTES.client.root, ROUTES.client.home] | routeToAbsolute">{{ 'common.get-started' | translate }}</button>
             </div>
             <div class="d-flex justify-content-center mb-10">
               <span class="font-12 text-info">{{ 'landing.home.your-digital-dollar-account.open-your-free-account-in-1-minute' | translate }}</span>

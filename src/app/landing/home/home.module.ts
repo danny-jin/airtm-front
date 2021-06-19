@@ -1,8 +1,11 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
+import { RouterModule } from '@angular/router';
 import { TranslateModule } from '@ngx-translate/core';
 import { LazyLoadImageModule } from 'ng-lazyload-image';
 import { RatingModule } from 'ng-starrating';
+
+import { PipesModule } from '../../ui-kit/pipes/pipes.module';
 
 // injected home module directly to the app module to improve the TTFB
 /*import { HomeRoutingModule } from './home-routing.module';*/
@@ -37,9 +40,11 @@ import { HowToStartComponent } from './how-to-start/how-to-start.component';
   ],
   imports: [
     CommonModule,
+    RouterModule,
     TranslateModule,
     LazyLoadImageModule,
     RatingModule,
+    PipesModule,
     // injected home module directly to the app module to improve the TTFB
     /*HomeRoutingModule,*/
   ],

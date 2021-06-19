@@ -205,6 +205,38 @@
   },
   "client": {
     "home": {
+      "account-setup": "Account setup",
+      "upload-profile-picture": "Upload a profile picture",
+      "upload-photo-of-yourself": "Upload a photo of yourself to uniquely identify your wallet.",
+      "upload-photo": "Upload photo",
+      "invite-your-fiends": "Invite your friends",
+      "give-air-usd": "Give $2.00 AirUSD and get $3.00 AirUSD for each invite who completes 3 adds funds of at least $5.00 AirUSD each as a verified user. Learn more about our invite program and your variable commission",
+      "here": "here",
+      "later": "Later",
+      "invite": "Invite",
+      "my-balances": "My balances",
+      "main-balance": "Main balance",
+      "add": "Add",
+      "send-request": "Send/Request",
+      "view-activity": "View activity"
+    },
+    "add-funds": {
+      "root": "Add funds",
+      "enter-info": "Enter info",
+      "submit-request": "Submit request",
+      "confirm-transfer": "Confirm transfer",
+      "complete": "Complete",
+      "select-payment-method": "Select a payment method",
+      "more-payment-methods": "More payment methods"
+    },
+    "withdraw-funds": {
+      "root": "Withdraw funds",
+      "enter-info": "Enter info",
+      "submit-request": "Submit request",
+      "confirm-transfer": "Confirm transfer",
+      "complete": "Complete",
+      "select-payment-method": "Select a payment method",
+      "more-payment-methods": "More payment methods"
     },
     "invite-friends": {
       "earn-air-usd": "Earn AirUSD by inviting friends to Airtm",
@@ -221,7 +253,7 @@
       "whatsapp": "WhatsApp",
       "your-invites-must": "Your invites must sign up within 24 hours after clicking through your invite link using the same device and browser for you to receive credit. Rewards are paid 24 hours after invite requirements are achieved.",
       "out-of": "Out of",
-      "invitees-who": "invitees who have signed up for Airtm, ",
+      "invitees-who": "invitees who have signed up for Airtm",
       "have-achieved": "have achieved the invite reward and completed",
       "add-withdraw-transactions": "add/withdraw transactions.",
       "you-have-earned": "You have earned",

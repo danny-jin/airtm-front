@@ -15,6 +15,7 @@ export const ROUTES = {
     blog: 'blog',
   },
   client: {
+    root: 'app',
     home: 'home',
     add: 'add',
     withdraw: 'withdraw',

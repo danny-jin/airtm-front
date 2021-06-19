@@ -11,6 +11,7 @@ export class ColorPipe implements PipeTransform {
     'buddha-gold': '#C99400', // warning color
     'blue-bayoux': '#526474', // info color
     'brick-red': '#CF304A', // danger color
+    'dodger-blue-01': '#1aa0fc',
     downriver: '#0A2540',
     'blue-romance': '#D1F4D9',
     'humming-bird': '#D0F3F8',

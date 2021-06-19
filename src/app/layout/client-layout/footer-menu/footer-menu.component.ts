@@ -13,22 +13,22 @@ export class FooterMenuComponent implements OnInit {
     {
       icon: 'home',
       label: 'sidebar.home',
-      route: toAbsolutePath(ROUTES.client.home)
+      route: toAbsolutePath([ROUTES.client.root, ROUTES.client.home])
     },
     {
       icon: 'cloud-add',
       label: 'sidebar.add',
-      route: toAbsolutePath(ROUTES.client.add)
+      route: toAbsolutePath([ROUTES.client.root, ROUTES.client.add])
     },
     {
       icon: 'cloud-withdraw',
       label: 'sidebar.withdraw',
-      route: toAbsolutePath(ROUTES.client.withdraw)
+      route: toAbsolutePath([ROUTES.client.root, ROUTES.client.withdraw])
     },
     {
       icon: 'transfers',
       label: 'sidebar.transfers',
-      route: toAbsolutePath(ROUTES.client.transfers)
+      route: toAbsolutePath([ROUTES.client.root, ROUTES.client.transfers])
     },
     {
       icon: 'more',
@@ -41,37 +41,37 @@ export class FooterMenuComponent implements OnInit {
     {
       icon: 'virtual-cards',
       label: 'sidebar.virtual-cards',
-      route: toAbsolutePath(ROUTES.client.virtualCards)
+      route: toAbsolutePath([ROUTES.client.root, ROUTES.client.virtualCards])
     },
     {
       icon: 'activity',
       label: 'sidebar.activity',
-      route: toAbsolutePath(ROUTES.client.activity)
+      route: toAbsolutePath([ROUTES.client.root, ROUTES.client.activity])
     },
     {
       icon: 'peer',
       label: 'sidebar.peer-transfers',
-      route: toAbsolutePath(ROUTES.client.peerTransfers)
+      route: toAbsolutePath([ROUTES.client.root, ROUTES.client.peerTransfers])
     },
     {
       icon: 'cubic',
       label: 'sidebar.crypto',
-      route: toAbsolutePath(ROUTES.client.crypto)
+      route: toAbsolutePath([ROUTES.client.root, ROUTES.client.crypto])
     },
     {
       icon: 'triangle',
       label: 'sidebar.invite-friends',
-      route: toAbsolutePath(ROUTES.client.inviteFriends)
+      route: toAbsolutePath([ROUTES.client.root, ROUTES.client.inviteFriends])
     },
     {
       icon: 'store',
       label: 'sidebar.store-directory',
-      route: toAbsolutePath(ROUTES.client.storeDirectory)
+      route: toAbsolutePath([ROUTES.client.root, ROUTES.client.storeDirectory])
     },
     {
       icon: 'settings',
       label: 'sidebar.settings',
-      route: toAbsolutePath(ROUTES.client.settings)
+      route: toAbsolutePath([ROUTES.client.root, ROUTES.client.settings])
     },
     {
       icon: 'help',

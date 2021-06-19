@@ -9,6 +9,13 @@
     }
   }
 
+  &-transparent {
+    color: $blue-bayoux;
+    &:hover, &:active {
+      background: $iron;
+    }
+  }
+
   &-outline-primary {
     border: solid 1px $dodger-blue;
     color: $dodger-blue;

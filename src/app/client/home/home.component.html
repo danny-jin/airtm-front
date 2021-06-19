@@ -1,1 +1,44 @@
-<p>home works!</p>
+<div class="container">
+  <div class="d-flex p-20 mb-30 rounded-2 elevation-1">
+    <div class="d-flex flex-column flex-grow-1">
+      <div class="d-flex align-items-center mb-5">
+        <span class="text-info me-5">{{ 'client.home.account-setup' | translate }} 0/3:</span>
+        <span class="text-dark font-weight-bold">{{ 'client.home.upload-profile-picture' | translate}}</span>
+      </div>
+      <div class="d-flex mb-5">
+        <mat-progress-bar mode="determinate" value="0"></mat-progress-bar>
+      </div>
+      <span class="text-info font-13">{{ 'client.home.upload-photo-of-yourself' | translate }}</span>
+    </div>
+    <div class="d-flex align-items-center ms-10">
+      <button class="btn btn-primary rounded-pill width-160">{{ 'client.home.upload-photo' | translate }}</button>
+    </div>
+  </div>
+  <div class="row justify-content-center my-30" *ngIf="showInviteFriends">
+    <div class="col-12 col-sm-3 mb-20">
+      <div div class="d-flex justify-content-center px-xl-20">
+        <img class="w-100" defaultImage="assets/images/placeholder.png" lazyLoad="assets/images/client-pages/invite-friends/invite-friends.svg" alt="Invite Friends" loading="lazy">
+      </div>
+    </div>
+    <div class="col-12 col-sm-9">
+      <div class="d-flex flex-column">
+        <h3 class="text-dark mt-10 mb-15">{{ 'client.home.invite-your-fiends' | translate }}</h3>
+        <span class="text-info">{{ 'client.home.give-air-usd' | translate }} <a class="text-primary text-decoration-none">{{ 'client.home.here' | translate }}</a>.</span>
+        <div class="d-flex justify-content-end align-items-center">
+          <button class="btn btn-transparent rounded-pill width-90 me-10" (click)="showInviteFriends = false;">{{ 'client.home.later' | translate }}</button>
+          <button class="btn btn-primary rounded-pill width-90" [routerLink]="[ROUTES.client.root, ROUTES.client.inviteFriends] | routeToAbsolute">{{ 'client.home.invite' | translate }}</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="d-flex flex-column">
+    <div class="d-flex mb-20">
+      <h1 class="text-dark">{{ 'client.home.my-balances' | translate }}</h1>
+    </div>
+    <div class="row justify-content-center">
+      <div class="col-12 col-md-6 col-lg-3">
+        <app-client-home-balance-card></app-client-home-balance-card>
+      </div>
+    </div>
+  </div>
+</div>

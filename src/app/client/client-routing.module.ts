@@ -15,11 +15,11 @@ const routes: Routes = [
       },
       {
         path: ROUTES.client.add,
-        loadChildren: () => import('./home/home.module').then(m => m.HomeModule),
+        loadChildren: () => import('./add-funds/add-funds.module').then(m => m.AddFundsModule),
       },
       {
         path: ROUTES.client.withdraw,
-        loadChildren: () => import('./home/home.module').then(m => m.HomeModule),
+        loadChildren: () => import('./withdraw-funds/withdraw-funds.module').then(m => m.WithdrawFundsModule),
       },
       {
         path: ROUTES.client.transfers,

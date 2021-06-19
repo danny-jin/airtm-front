@@ -76,12 +76,23 @@ export class SignupComponent implements OnInit {
   ) { }
 
   ngOnInit(): void {
-    this.countryList = csc.getAllCountries().map((item: ICountry) => {
-      return {
-        label: item.name,
-        value: item.name
-      };
-    });
+    this.initCountry().then();
+  }
+
+  async initCountry(): Promise<void> {
+    try {
+      this.isLoading = true;
+      this.countryList = csc.getAllCountries().map((item: ICountry) => {
+        return {
+          label: item.name,
+          value: item.name
+        };
+      });
+    } catch (e) {
+      console.log(e);
+    } finally {
+      this.isLoading = false;
+    }
   }
 
   async signUp(): Promise<void> {

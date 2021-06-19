@@ -1,0 +1,19 @@
+<div class="d-flex flex-column rounded-2 elevation-1">
+  <div class="d-flex flex-column p-10">
+    <div class="d-flex justify-content-center mb-10">
+      <img class="width-70" defaultImage="assets/images/placeholder.png" lazyLoad="assets/images/client-pages/home/balance-card-logo.png" alt="Main Balance Logo" loading="lazy">
+    </div>
+    <div class="d-flex flex-column align-items-center">
+      <h6 class="text-dark font-weight-bold mb-10">{{ 'client.home.main-balance' | translate }}</h6>
+      <h5 class="text-dark mb">{{ 0 | number | currency }} AirUSD</h5>
+      <span class="text-info">S{{ 0 | number | currency }} SGD</span>
+    </div>
+    <div class="d-flex justify-content-between">
+      <a class="text-primary font-weight-bold text-decoration-none">{{ 'client.home.add' | translate }}</a>
+      <a class="text-primary font-weight-bold text-decoration-none">{{ 'client.home.send-request' | translate }}</a>
+    </div>
+  </div>
+  <div class="d-flex justify-content-center align-items-center rounded-bottom py-5 px-20 elevation-0 bg-success">
+    <span class="text-white font-weight-bold">{{ 'client.home.view-activity' | translate }}</span>
+  </div>
+</div>

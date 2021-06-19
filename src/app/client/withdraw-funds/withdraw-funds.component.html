@@ -1,0 +1,23 @@
+<div class="container">
+  <h2 class="text-dark">{{ 'client.withdraw-funds.root' | translate }}</h2>
+  <div class="d-flex mt-20">
+    <mat-horizontal-stepper labelPosition="bottom" #stepper>
+      <mat-step label="{{ 'client.withdraw-funds.enter-info' | translate }}" [editable]="isStepperEditable"></mat-step>
+      <mat-step label="{{ 'client.withdraw-funds.submit-request' | translate }}" [editable]="isStepperEditable"></mat-step>
+      <mat-step label="{{ 'client.withdraw-funds.confirm-transfer' | translate }}" [editable]="isStepperEditable"></mat-step>
+      <mat-step label="{{ 'client.withdraw-funds.complete' | translate }}" [editable]="isStepperEditable"></mat-step>
+    </mat-horizontal-stepper>
+  </div>
+  <div class="d-flex justify-content-between mb-20">
+    <h5 class="text-dark fw-normal">{{ 'client.withdraw-funds.select-payment-method' | translate }}</h5>
+    <div class="d-flex align-items-center cursor-pointer">
+      <app-icon icon="search" [width]="24" color="dodger-blue" hoverColor="dodger-blue-01"></app-icon>
+      <span class="text-primary font-weight-bold ms-10 cursor-pointer">{{ 'client.withdraw-funds.more-payment-methods' | translate }}</span>
+    </div>
+  </div>
+  <div class="d-flex">
+    <button class="btn btn-primary width-80 me-20" (click)="back()">Back</button>
+    <button class="btn btn-primary width-80 me-20" (click)="next()">Next</button>
+    <button class="btn btn-primary width-80" (click)="reset()">Reset</button>
+  </div>
+</div>
