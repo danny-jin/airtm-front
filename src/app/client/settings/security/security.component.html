@@ -1,0 +1,34 @@
+<div class="container">
+  <div class="d-flex elevation-1 rounded-2 p-15">
+    <div class="d-none d-lg-flex mr-0 mr-lg-30">
+      <img class="width-60" defaultImage="assets/images/placeholder.png" lazyLoad="assets/images/client-pages/settings/2fa.svg" alt="2FA" loading="lazy">
+    </div>
+    <div class="flex-grow-1 d-flex flex-column">
+      <div class="d-flex align-items-center mb-10">
+        <span class="text-info me-5">{{ 'client.settings.security.security-level' | translate }}:</span>
+        <span class="text-dark font-weight-bold">0/3</span>
+      </div>
+      <div class="d-flex mb-10">
+        <mat-progress-bar mode="determinate" value="0"></mat-progress-bar>
+      </div>
+      <div class="d-flex align-items-center">
+        <span class="text-dark font-13 font-weight-bold me-10">{{ 'client.settings.security.next' | translate }}</span>
+        <a class="text-primary font-weight-bold text-decoration-none cursor-pointer">{{ 'client.settings.security.enable-two-factor-authentication' | translate }}</a>
+      </div>
+    </div>
+  </div>
+  <app-separator></app-separator>
+  <div class="d-flex flex-column">
+    <h4 class="text-dark mb-20">{{ 'client.settings.security.password' | translate }}</h4>
+    <div class="d-flex align-items-center cursor-pointer change-password">
+      <app-icon icon="key" [width]="24" color="dodger-blue"></app-icon>
+      <span class="font-weight-bold">{{ 'client.settings.security.change-password' | translate }}</span>
+    </div>
+  </div>
+  <app-separator></app-separator>
+  <div class="d-flex flex-column">
+    <h4 class="text-dark mb-20">{{ 'client.settings.security.two-factor-authentication' | translate }}</h4>
+    <span class="text-info mb-20">{{ 'client.settings.security.may-require-app-installs-on-your-smartphone' | translate }}</span>
+    <button class="btn btn-primary width-140 rounded-pill">{{ 'client.settings.security.enable-now' | translate }}</button>
+  </div>
+</div>

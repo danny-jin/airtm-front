@@ -1,0 +1,8 @@
+@import "../../../assets/theme";
+
+li {
+  &:active, &:focus, &.active {
+    color: $dodger-blue;
+    border-bottom: solid 2px $dodger-blue-01;
+  }
+}

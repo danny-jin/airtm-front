@@ -21,13 +21,23 @@ export const ROUTES = {
     withdraw: 'withdraw',
     transfers: 'transfers',
     sendRequest: 'send-request',
-    virtualCards: 'virtual-cards',
+    virtualCards: {
+      root: 'virtual-cards',
+      form: 'form'
+    },
     activity: 'activity',
     peerTransfers: 'peer-transfers',
     crypto: 'crypto',
     inviteFriends: 'invite-friends',
     storeDirectory: 'store-directory',
-    settings: 'settings'
+    settings: {
+      root: 'settings',
+      profile: 'profile',
+      verification: 'verification',
+      security: 'security',
+      paymentMethods: 'payment-methods',
+      apps: 'apps'
+    }
   },
 };
 

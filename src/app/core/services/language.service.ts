@@ -2,7 +2,7 @@ import { Injectable } from '@angular/core';
 import { TranslateService } from '@ngx-translate/core';
 import { BehaviorSubject } from 'rxjs';
 
-import { Language } from '../models/language';
+import { Option } from '../models/option';
 import { languageList } from '../constants/language';
 import enLanguage from '../../../assets/i18n/en.json';
 import krLanguage from '../../../assets/i18n/kr.json';
@@ -13,17 +13,17 @@ import krLanguage from '../../../assets/i18n/kr.json';
 export class LanguageService {
 
   // @ts-ignore
-  language: Language = null;
+  language: Option<string> = null;
 
-  language$: BehaviorSubject<Language> = new BehaviorSubject<Language>(this.language);
+  language$: BehaviorSubject<Option<string>> = new BehaviorSubject<Option<string>>(this.language);
 
   constructor(
     private translate: TranslateService,
   ) { }
 
   initLanguage(): void {
-    const languages = languageList.map((item: Language) => {
-      return item.code;
+    const languages = languageList.map((item: Option<string>) => {
+      return item.value;
     });
     this.translate.addLangs(languages);
     this.translate.setTranslation('en', enLanguage);
@@ -31,16 +31,16 @@ export class LanguageService {
     this.setLanguage(languageList[0]);
   }
 
-  setLanguage(lang: Language): void {
+  setLanguage(lang: Option<string>): void {
     this.language = lang;
     this.language$.next(this.language);
   }
 
-  switchLanguage(lang: Language): void {
+  switchLanguage(lang: Option<string>): void {
     this.setLanguage(lang);
-    this.translate.use(lang.code);
+    this.translate.use(lang.value);
     let languageFile = enLanguage;
-    switch (lang.code) {
+    switch (lang.value) {
       case 'en':
         languageFile = enLanguage;
         break;
@@ -48,7 +48,7 @@ export class LanguageService {
         languageFile = krLanguage;
         break;
     }
-    this.translate.setTranslation(lang.code, languageFile);
+    this.translate.setTranslation(lang.value, languageFile);
   }
 
 }

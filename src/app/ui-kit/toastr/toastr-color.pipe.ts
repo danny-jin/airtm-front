@@ -29,7 +29,7 @@ export class ToastrColorPipe implements PipeTransform {
       data = {
         bg: 'alert-warning bg-color-peach',
         image: 'assets/icons/toastr/question.svg',
-        icon: 'buddha-gold',
+        icon: 'my-sin',
       };
     } else if (type === ToastrType.Danger) {
       data = {

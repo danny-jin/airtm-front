@@ -30,12 +30,12 @@ const routes: Routes = [
         loadChildren: () => import('./home/home.module').then(m => m.HomeModule),
       },
       {
-        path: ROUTES.client.virtualCards,
-        loadChildren: () => import('./home/home.module').then(m => m.HomeModule),
+        path: ROUTES.client.virtualCards.root,
+        loadChildren: () => import('./virtual-cards/virtual-cards.module').then(m => m.VirtualCardsModule),
       },
       {
         path: ROUTES.client.activity,
-        loadChildren: () => import('./home/home.module').then(m => m.HomeModule),
+        loadChildren: () => import('./activity/activity.module').then(m => m.ActivityModule),
       },
       {
         path: ROUTES.client.peerTransfers,
@@ -54,8 +54,8 @@ const routes: Routes = [
         loadChildren: () => import('./home/home.module').then(m => m.HomeModule),
       },
       {
-        path: ROUTES.client.settings,
-        loadChildren: () => import('./home/home.module').then(m => m.HomeModule),
+        path: ROUTES.client.settings.root,
+        loadChildren: () => import('./settings/settings.module').then(m => m.SettingsModule),
       },
     ]
   }

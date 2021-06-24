@@ -1,0 +1,10 @@
+@import "../../../../assets/theme";
+
+.outline-primary {
+  border: solid 1px $dodger-blue;
+  color: $dodger-blue;
+  &:hover, &:active {
+    color: $white;
+    background: $dodger-blue;
+  }
+}

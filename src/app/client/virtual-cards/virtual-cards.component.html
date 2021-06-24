@@ -1,0 +1,27 @@
+<div class="container">
+  <h1 class="text-dark mb-50">{{ 'client.virtual-cards.root' | translate }}</h1>
+  <div class="row">
+    <div class="col-12 col-lg-6">
+      <div class="mb-30">
+        <div class="rounded-2 virtual-card-image mb-20">
+          <img class="w-100" defaultImage="assets/images/placeholder.png" lazyLoad="assets/images/client-pages/virtual-cards/virtual-card.png" alt="Virtual card" loading="lazy">
+        </div>
+        <button class="btn btn-primary rounded-pill w-100" ngxScrollTo="root" [routerLink]="[ROUTES.client.root, ROUTES.client.virtualCards.root, ROUTES.client.virtualCards.form] | routeToAbsolute">{{ 'client.virtual-cards.get-a-card' | translate }}</button>
+      </div>
+    </div>
+    <div class="col-12 col-lg-6">
+      <div class="row">
+        <div class="col-12 col-sm-6" *ngFor="let description of descriptions">
+          <div class="d-flex flex-column mb-20">
+            <div class="mb-10">
+              <app-icon [icon]="description.icon" [width]="24" color="blue-bayoux"></app-icon>
+            </div>
+            <div class="d-flex">
+              <span class="text-info">{{ description.text | translate }}</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

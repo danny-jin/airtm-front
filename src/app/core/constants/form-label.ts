@@ -30,3 +30,17 @@ export const completeProfileForm = {
   birthday: 'Birthday',
   inviter: 'Inviter'
 };
+
+export const specialsForm = {
+  prefix: 'specials',
+  secondaryEmail: 'Secondary Email'
+};
+
+export const virtualCardForm = {
+  prefix: 'virtual-card',
+  cardName: 'Card name',
+  cardValue: 'Card value',
+  localCurrencyEquivalent: 'Local currency equivalent',
+  totalCostOfCard: 'Total cost of card',
+  isConfirmed: 'Card Fee Confirm'
+};

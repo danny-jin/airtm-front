@@ -1,0 +1,23 @@
+<div class="container">
+  <h1 class="text-dark mb-50">{{ 'client.activity.root' | translate }}</h1>
+  <div class="row mb-20">
+    <div class="col-12 col-lg-9">
+      <form [formGroup]="form">
+        <div class="row">
+          <div class="col-12 col-md-6 col-lg-4">
+            <app-select [options]="filterOptions" formControlName="filterType"></app-select>
+          </div>
+          <div class="col-12 col-md-6 col-lg-8">
+            <app-text-input placeholder="{{ 'client.activity.text-to-search' | translate }}" formControlName="keyword"></app-text-input>
+          </div>
+        </div>
+      </form>
+    </div>
+    <div class="col-12 col-lg-3">
+      <button class="btn btn-primary width-120 rounded-pill">{{ 'client.activity.search' | translate }}</button>
+    </div>
+  </div>
+  <div class="d-flex justify-content-center">
+    <h6 class="text-dark font-weight-bold">{{ 'client.activity.you-dont-have' | translate }}</h6>
+  </div>
+</div>

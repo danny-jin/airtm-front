@@ -15,7 +15,7 @@
       </div>
       <div class="language">
         <ng-container *ngFor="let language of languageList">
-          <a class="text-info font-14 fw-bold text-decoration-none cursor-pointer" (click)="switchLanguage(language)" *ngIf="language.code !== (language$ | async)?.code">{{ language.code | uppercase }}</a>
+          <a class="text-info font-14 fw-bold text-decoration-none cursor-pointer" (click)="switchLanguage(language)" *ngIf="language.value !== (language$ | async)?.value">{{ language.value | uppercase }}</a>
         </ng-container>
       </div>
     </div>

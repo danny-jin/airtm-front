@@ -8,7 +8,7 @@ export class ColorPipe implements PipeTransform {
   colors = {
     'dodger-blue': '#1783FA', // primary color
     'mountain-meadow': '#0ECB81', // success color
-    'buddha-gold': '#C99400', // warning color
+    'my-sin': '#ffb82a', // warning color
     'blue-bayoux': '#526474', // info color
     'brick-red': '#CF304A', // danger color
     'dodger-blue-01': '#1aa0fc',

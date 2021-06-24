@@ -1,0 +1,25 @@
+@import "../../../../assets/theme";
+
+.change-password {
+  span {
+    margin-left: 7px;
+    margin-top: 3px;
+    color: $dodger-blue
+  }
+  app-icon::ng-deep {
+    svg {
+      fill: $dodger-blue !important;
+    }
+  }
+
+  &:hover, &:active, &:focus, &.active {
+    span {
+      color: $denim;
+    }
+    app-icon::ng-deep {
+      svg {
+        fill: $denim !important;
+      }
+    }
+  }
+}

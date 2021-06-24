@@ -28,7 +28,7 @@
           <button class="btn btn-primary width-100 rounded-pill me-20" ngxScrollTo="root" [routerLink]="[ROUTES.auth.signUp] | routeToAbsolute">{{ 'auth.signup.join' | translate }}</button>
           <div class="d-flex align-items-center">
             <ng-container *ngFor="let language of languageList">
-              <a class="text-info font-14 fw-bold text-decoration-none cursor-pointer" (click)="switchLanguage(language)" *ngIf="language.code !== (language$ | async)?.code">{{ language.code | uppercase }}</a>
+              <a class="text-info font-14 fw-bold text-decoration-none cursor-pointer" (click)="switchLanguage(language)" *ngIf="language.value !== (language$ | async)?.value">{{ language.value | uppercase }}</a>
             </ng-container>
           </div>
         </div>
@@ -61,7 +61,7 @@
         <button class="btn btn-primary width-100 rounded-pill mb-20" ngxScrollTo="root" [routerLink]="[ROUTES.auth.signUp] | routeToAbsolute">{{ 'auth.signup.join' | translate }}</button>
         <div class="d-flex justify-content-center align-items-center">
           <ng-container *ngFor="let language of languageList">
-            <a class="text-info font-14 fw-bold text-decoration-none cursor-pointer" (click)="switchLanguage(language)" *ngIf="language.code !== (language$ | async)?.code">{{ language.code | uppercase }}</a>
+            <a class="text-info font-14 fw-bold text-decoration-none cursor-pointer" (click)="switchLanguage(language)" *ngIf="language.value !== (language$ | async)?.value">{{ language.value | uppercase }}</a>
           </ng-container>
         </div>
       </div>

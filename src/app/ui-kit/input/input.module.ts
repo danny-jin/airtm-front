@@ -1,6 +1,7 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { MatSelectModule } from '@angular/material/select';
 import { TranslateModule } from '@ngx-translate/core';
 import { NgbDatepickerModule } from '@ng-bootstrap/ng-bootstrap';
 import { DropDownListModule } from '@syncfusion/ej2-angular-dropdowns';
@@ -16,6 +17,7 @@ import { PhoneNumberInputComponent } from './phone-number-input/phone-number-inp
 import { SelectComponent } from './select/select.component';
 import { DateRangePickerComponent } from './date-range-picker/date-range-picker.component';
 import { DatePickerComponent } from './date-picker/date-picker.component';
+import { CurrencyInputComponent } from './currency-input/currency-input.component';
 
 @NgModule({
   declarations: [
@@ -24,12 +26,14 @@ import { DatePickerComponent } from './date-picker/date-picker.component';
     PhoneNumberInputComponent,
     SelectComponent,
     DateRangePickerComponent,
-    DatePickerComponent
+    DatePickerComponent,
+    CurrencyInputComponent
   ],
   imports: [
     CommonModule,
     FormsModule,
     ReactiveFormsModule,
+    MatSelectModule,
     TranslateModule,
     NgbDatepickerModule,
     DropDownListModule,
@@ -44,7 +48,8 @@ import { DatePickerComponent } from './date-picker/date-picker.component';
     PhoneNumberInputComponent,
     SelectComponent,
     DateRangePickerComponent,
-    DatePickerComponent
+    DatePickerComponent,
+    CurrencyInputComponent
   ]
 })
 export class InputModule {

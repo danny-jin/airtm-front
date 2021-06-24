@@ -1,4 +1,4 @@
 export const languageList = [
-  { value: 'English', code: 'en' },
-  { value: '조선어', code: 'kr' }
+  { label: 'English', value: 'en' },
+  { label: '조선어', value: 'kr' }
 ];

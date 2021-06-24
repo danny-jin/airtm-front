@@ -261,6 +261,96 @@
       "from-add-withdraw-commissions": "from add/withdraw commissions.",
       "you-are-about-to-send": "You're about to send an invitation to:",
       "invite": "Invite"
+    },
+    "settings": {
+      "root": "Settings",
+      "profile": {
+        "root": "Profile",
+        "user-name": "Username",
+        "address": "Address",
+        "phone-number": "Phone number",
+        "date-of-birth": "Date of birth",
+        "to-update-your-account-information": "To update your account information",
+        "please": "please",
+        "contact-support": "contact support",
+        "local-currency": "Local currency",
+        "language": "Language",
+        "timezone": "Timezone",
+        "secondary-emails": "Secondary emails",
+        "use-secondary-emails": "Use secondary emails to configure payment methods with an email different than the primary email associated with your Airtm account.",
+        "input-secondary-email": "Input secondary email",
+        "verify-secondary-email": "Verify secondary email"
+      },
+      "verification": {
+        "root": "Verification",
+        "your-wallet-is-not-verified": "Your wallet is not verified",
+        "verify-your-identity": "Verify your identity to access additional payment methods and higher limits. You are currently limited to $1,000 USD-equivalent in aggregate send/withdraw volume",
+        "by-continuing": "By continuing, you consent: I have read, understand and accept",
+        "onfidos-facial": "Onfido’s Facial Scan Policy and Release",
+        "privacy-policy": "Privacy Policy",
+        "and": "and",
+        "terms-of-service": "Terms of Service",
+        "verify-documents-now": "Verify documents now"
+      },
+      "security": {
+        "root": "Security",
+        "security-level": "Security level",
+        "next": "Next",
+        "enable-two-factor-authentication": "Enable two-factor authentication",
+        "password": "Password",
+        "change-password": "Change password",
+        "two-factor-authentication": "Two-factor authentication",
+        "may-require-app-installs-on-your-smartphone": "May require app installs on your smartphone",
+        "enable-now": "Enable now"
+      },
+      "payment-methods": {
+        "root": "Payment methods",
+        "add-new": "Add new",
+        "you-have-not-configured": "You haven't configured any payment methods"
+      },
+      "apps": {
+        "root": "Apps",
+        "airtm-app": "Airtm app",
+        "access-your-airtm-wallet": "Access your Airtm wallet from your smartphone"
+      }
+    },
+    "activity": {
+      "root": "Activity",
+      "transaction-id": "Transaction ID",
+      "email": "Email",
+      "name": "Name",
+      "user-name": "Username",
+      "search": "Search",
+      "filter": "Filter",
+      "text-to-search": "Text to search...",
+      "you-dont-have": "You don't have any completed transactions."
+    },
+    "virtual-cards": {
+      "root": "Virtual cards",
+      "non-reloadable": "Non-reloadable virtual card ($1.25 USD fee per purchase)",
+      "card-is-non-refundable": "Card is non-refundable",
+      "use-anywhere": "Use anywhere online where prepaid Mastercard or Visa are accepted (adult content and gambling are prohibited). All transactions are subject to a risk assessment.",
+      "when-inputting": "When inputting billing address or postal code during purchase, use the Airtm US headquarter address:\n8 The Green, Suite A\nDover, Delaware 19901\nUnited States",
+      "get-a-card": "Get a card",
+      "setup-virtual-card": "Setup virtual card",
+      "card-name": "Card name",
+      "i-e-phone-bill": "i.e. Phone bill",
+      "amount": "Amount",
+      "card-value": "Card value",
+      "local-currency-equivalent": "Local currency equivalent",
+      "total-cost-of-card": "Total cost of card",
+      "show-fee-details": "Show fee details",
+      "hide-fee-details": "Hide fee details",
+      "i-understand": "I understand a $1.25 USD fee will be deducted from my card value for each purchase.",
+      "cancel": "Cancel",
+      "next": "Next",
+      "card-value-must-be-within": "Card value must be within these amounts",
+      "maximum": "Maximum",
+      "minimum": "Minimum",
+      "setup-fee": "Setup fee",
+      "funding-fee": "Funding fee",
+      "service-fee": "Service fee",
+      "total": "Total"
     }
   }
 }

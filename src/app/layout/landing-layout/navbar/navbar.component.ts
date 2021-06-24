@@ -6,7 +6,7 @@ import { languageList } from '../../../core/constants/language';
 import { landingHeaderHeight } from '../../../core/constants/base';
 import { ROUTES } from '../../../core/constants/routes';
 import { LanguageService } from '../../../core/services/language.service';
-import { Language } from '../../../core/models/language';
+import { Option } from '../../../core/models/option';
 
 @Component({
   selector: 'app-landing-navbar',
@@ -48,7 +48,7 @@ export class NavbarComponent implements OnInit {
     this.isSticky = window.scrollY > landingHeaderHeight;
   }
 
-  switchLanguage(language: Language): void {
+  switchLanguage(language: Option<string>): void {
     this.languageService.switchLanguage(language);
   }
 

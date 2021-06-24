@@ -1,9 +1,9 @@
 import { Component, HostListener, OnInit } from '@angular/core';
 
 import { LanguageService } from '../../../core/services/language.service';
+import { Option } from '../../../core/models/option';
 import { headerHeight } from '../../../core/constants/base';
 import { languageList } from '../../../core/constants/language';
-import { Language } from '../../../core/models/language';
 
 @Component({
   selector: 'app-auth-navbar',
@@ -29,7 +29,7 @@ export class NavbarComponent implements OnInit {
     this.isSticky = window.scrollY > headerHeight;
   }
 
-  switchLanguage(language: Language): void {
+  switchLanguage(language: Option<string>): void {
     this.languageService.switchLanguage(language);
   }
 

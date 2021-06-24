@@ -1,0 +1,92 @@
+<div class="container">
+  <div class="d-flex flex-column flex-lg-row">
+    <div class="avatar mb-20">
+      <ngx-avatar [size]="120" [value]="userName | twoLetter"></ngx-avatar>
+    </div>
+    <div class="flex-grow-1">
+      <div class="row">
+        <div class="col-12 col-lg-4">
+          <div class="d-flex flex-column">
+            <h5 class="text-dark text-center text-lg-start mb-10">{{ userName }}</h5>
+            <div class="d-flex justify-content-center justify-content-lg-start align-items-center mb-10">
+              <app-icon icon="star" [width]="24" class="me-5" color="my-sin"></app-icon>
+              <span class="text-dark">0</span>
+            </div>
+            <p class="text-info text-center text-lg-start">danny@cabinetex.com</p>
+          </div>
+        </div>
+        <div class="col-12 col-lg-8">
+          <div class="d-flex flex-column mb-20 mb-lg-0">
+            <h6 class="text-dark mb-10">{{ 'client.settings.profile.user-name' | translate }}:</h6>
+            <a class="text-decoration-none text-primary cursor-pointer">danny5krge50h</a>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-6 col-lg-4">
+          <div class="d-flex flex-column">
+            <h6 class="text-dark mb-10">{{ 'client.settings.profile.address' | translate }}:</h6>
+            <span class="text-info">Cll 6b 14-77 barrio San Luis San Luis, BOY 700001</span>
+          </div>
+        </div>
+        <div class="col-6 col-lg-8">
+          <div class="row">
+            <div class="col-12 col-lg-6">
+              <div class="d-flex flex-column mb-20 mb-lg-0">
+                <h6 class="text-dark mb-10">{{ 'client.settings.profile.phone-number' | translate }}:</h6>
+                <span class="text-info">+57 3233776925</span>
+              </div>
+            </div>
+            <div class="col-12 col-lg-6">
+              <div class="d-flex flex-column">
+                <h6 class="text-dark mb-10">{{ 'client.settings.profile.date-of-birth' | translate }}:</h6>
+                <span class="text-info">November 9, 1996</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="d-flex align-items-center mt-30">
+        <span class="text-info font-13">{{ 'client.settings.profile.to-update-your-account-information' | translate }},</span>
+        <span class="text-info mx-5 font-13">{{ 'client.settings.profile.please' | translate }}</span>
+        <a class="text-primary font-13 text-decoration-none cursor-pointer">{{ 'client.settings.profile.contact-support' | translate }}</a>
+      </div>
+    </div>
+  </div>
+  <app-separator></app-separator>
+  <div class="row">
+    <div class="col-12 col-lg-6">
+      <form class="w-100" [formGroup]="commonForm">
+        <div class="d-flex flex-column mb-20">
+          <h6 class="text-dark mb-10">{{ 'client.settings.profile.local-currency' | translate }}</h6>
+          <app-select [options]="localCurrencyOptions" formControlName="localCurrency"></app-select>
+        </div>
+        <div class="d-flex flex-column mb-20">
+          <h6 class="text-dark mb-10">{{ 'client.settings.profile.language' | translate }}</h6>
+          <app-select [options]="languageList" formControlName="language"></app-select>
+        </div>
+        <div class="d-flex flex-column">
+          <h6 class="text-dark mb-10">{{ 'client.settings.profile.timezone' | translate }}</h6>
+          <app-select [options]="timezoneOptions" formControlName="timezone"></app-select>
+        </div>
+      </form>
+    </div>
+  </div>
+  <app-separator></app-separator>
+  <div class="d-flex flex-column">
+    <h5 class="text-dark mb-20">{{ 'client.settings.profile.secondary-emails' | translate }}</h5>
+    <span class="text-info mb-20">{{ 'client.settings.profile.use-secondary-emails' | translate }}</span>
+    <form class="w-100" [formGroup]="emailForm">
+      <div class="row">
+        <div class="col-12 col-lg-6">
+          <app-text-input class="width-300 me-100" id="{{ prefix }}_email" formControlName="secondaryEmail" placeholder="{{ 'client.settings.profile.input-secondary-email' | translate }}"></app-text-input>
+        </div>
+        <div class="col-12 col-lg-6">
+          <div class="d-flex justify-content-center justify-content-lg-start">
+            <button class="btn btn-primary rounded-pill min-width-250" (click)="verifyEmail()">{{ 'client.settings.profile.verify-secondary-email' | translate }}</button>
+          </div>
+        </div>
+      </div>
+    </form>
+  </div>
+</div>

@@ -41,7 +41,7 @@ export class FooterMenuComponent implements OnInit {
     {
       icon: 'virtual-cards',
       label: 'sidebar.virtual-cards',
-      route: toAbsolutePath([ROUTES.client.root, ROUTES.client.virtualCards])
+      route: toAbsolutePath([ROUTES.client.root, ROUTES.client.virtualCards.root])
     },
     {
       icon: 'activity',
@@ -71,7 +71,7 @@ export class FooterMenuComponent implements OnInit {
     {
       icon: 'settings',
       label: 'sidebar.settings',
-      route: toAbsolutePath([ROUTES.client.root, ROUTES.client.settings])
+      route: toAbsolutePath([ROUTES.client.root, ROUTES.client.settings.root])
     },
     {
       icon: 'help',
