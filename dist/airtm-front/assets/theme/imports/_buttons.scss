@@ -1,0 +1,100 @@
+.btn.btn {
+  height: 40px;
+
+  &-primary {
+    background: $dodger-blue;
+    color: white;
+    &:hover, &:active {
+      background: $dodger-blue-01;
+    }
+  }
+
+  &-transparent {
+    color: $blue-bayoux;
+    &:hover, &:active {
+      background: $iron;
+    }
+  }
+
+  &-gray-1 {
+    background: $wild-sand;
+    box-shadow: 0 3px 1px -2px rgba(0, 0, 0, 0.2), 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 1px 5px 0 rgba(0, 0, 0, 0.12);
+
+    &:hover, &:active {
+      box-shadow: 0 5px 5px -3px rgba(0, 0, 0, 0.2), 0 8px 10px 1px rgba(0, 0, 0, 0.14), 0 3px 14px 2px rgba(0, 0, 0, 0.12);
+      background: $iron;
+    }
+  }
+
+  &-outline-primary {
+    border: solid 1px $dodger-blue;
+    color: $dodger-blue;
+    &:hover, &:active {
+      border: solid 1px $dodger-blue-01;
+      color: $dodger-blue;
+      background: transparent;
+    }
+  }
+
+  &-facebook {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: $indigo;
+    box-shadow: 0 3px 1px -2px rgba(0, 0, 0, 0.2), 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 1px 5px 0 rgba(0, 0, 0, 0.12);;
+    span {
+      font-size: 16px;
+      font-weight: 600;
+      color: white;
+    }
+    &:hover, &:active {
+      background: $azure;
+      box-shadow: 0 5px 5px -3px rgba(0, 0, 0, 0.2), 0 8px 10px 1px rgba(0, 0, 0, 0.14), 0 3px 14px 2px rgba(0, 0, 0, 0.12);;
+    }
+  }
+
+  &-google {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: $wild-sand;
+    box-shadow: 0 3px 1px -2px rgba(0, 0, 0, 0.2), 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 1px 5px 0 rgba(0, 0, 0, 0.12);;
+    span {
+      margin-left: 5px;
+      font-size: 16px;
+      font-weight: 600;
+      color: black;
+    }
+    &:hover, &:active {
+      box-shadow: 0 5px 5px -3px rgba(0, 0, 0, 0.2), 0 8px 10px 1px rgba(0, 0, 0, 0.14), 0 3px 14px 2px rgba(0, 0, 0, 0.12);;
+    }
+  }
+
+  &-whatsapp {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: $mountain-meadow;
+    box-shadow: 0 3px 1px -2px rgba(0, 0, 0, 0.2), 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 1px 5px 0 rgba(0, 0, 0, 0.12);;
+    span {
+      font-size: 16px;
+      font-weight: 600;
+      color: white;
+    }
+    &:hover, &:active {
+      background: $gossamer;
+      box-shadow: 0 5px 5px -3px rgba(0, 0, 0, 0.2), 0 8px 10px 1px rgba(0, 0, 0, 0.14), 0 3px 14px 2px rgba(0, 0, 0, 0.12);;
+    }
+  }
+
+}
+
+.btn-small {
+  min-width: 85px;
+  height: 32px !important;
+}
+
+.btn-large {
+  min-width: 135px;
+  height: 48px !important;
+}

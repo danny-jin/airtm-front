@@ -1,0 +1,374 @@
+{
+  "validation": {
+    "root": "Validation",
+    "weak": "Weak",
+    "medium": "Medium",
+    "high": "High"
+  },
+  "common": {
+    "get-started": "Get Started",
+    "warning": "Warning",
+    "loading": "Loading",
+    "slide-to-complete-puzzle": "Slide To complete the puzzle",
+    "copy-link": "Copy link"
+  },
+  "dialog": {
+    "security-verification": {
+      "root": "Security Verification"
+    }
+  },
+  "navbar": {
+    "landing": {
+      "store-directory": "Store directory",
+      "virtual-card": "Virtual card",
+      "rates": "Rates",
+      "blog": "Blog"
+    },
+    "client": {
+      "push-notification": "Push notification",
+      "mark-all-read": "Mark all read",
+      "no-unread-notifications": "No unread notifications :)",
+      "view-all-activity": "View all activity",
+      "main-balance": "Main balance",
+      "total": "Total",
+      "show-my-currency": "Show my currency",
+      "manage-local-settings": "Manage local settings",
+      "push-notification-notes": "Note: Users can only enable push notifications if they're on Chrome or Firefox on Desktop or Android devices."
+    }
+  },
+  "footer": {
+    "landing": {
+      "terms-and-conditions": "Terms and Conditions",
+      "made-with": "Made with",
+      "in-mexico-city": "in Mexico City",
+      "company": {
+        "root": "Company",
+        "about-us": "About us",
+        "jobs": "Jobs",
+        "press": "Press",
+        "partners": "Partners"
+      },
+      "help": {
+        "root": "Help",
+        "blog": "Blog",
+        "faqs": "FAQs",
+        "rates": "Rates"
+      },
+      "notice": "CONTENT DISCLAIMER: References made to third party names, logos and trademarks on this website are to identify corresponding goods and services that Airtm users can themselves exchange through P2P transactions facilitated by Airtm. Unless otherwise specified, the trademark holders are not affiliated with Airtm, our products or website, and they do not sponsor or endorse Airtm services. Such references are included strictly as nominative fair use under applicable trademark law and remain fully the property of their respective trademark holders."
+    },
+    "common": {
+      "product-updates": "Product updates"
+    }
+  },
+  "landing": {
+    "home": {
+      "your-digital-dollar-account": {
+        "root": "Your digital dollar account",
+        "without-local-restrictions": "Without local restrictions",
+        "using-the-real-exchange-rate": "Using the real exchange rate",
+        "with-no-minimum-balances-or-monthly-fees": "With no minimum balances or monthly fees",
+        "open-your-free-account-in-1-minute": "Open your free account in 1 minute",
+        "see-how-airtm-works": "See how Airtm works"
+      },
+      "global-info": {
+        "happy-members": "happy members",
+        "transactions-completed": "transactions completed",
+        "banks-e-money-networks": "banks & e-money networks",
+        "transaction-speed": "transaction speed"
+      },
+      "save-in-dollars": {
+        "root": "Save in dollars.",
+        "description": "Save in dollars without losing value from unstable currencies. With us, your money is protected from possible devaluations."
+      },
+      "send-and-spend-globally": {
+        "root": "Send and spend globally.",
+        "description": "Send and receive money anywhere, faster than a bank transfer and with free market rates. Spend online anywhere Mastercard or Visa are accepted."
+      },
+      "receive-payments-for-online-work": {
+        "root": "Receive payments for online work.",
+        "description": "Get paid from freelancer platforms or directly from clients. Convert your money stuck in e-wallets to cash in your bank."
+      },
+      "touchless-mobile-payments": {
+        "root": "Touchless mobile payments.",
+        "description": "Keep your dollars with you at all times. Make in person purchases for local goods and services.",
+        "see-where-you-can-pay-with-airtm": "See where you can pay with Airtm."
+      },
+      "buy-and-sell-cryptocurrencies": {
+        "root": "Buy and sell cryptocurrencies.",
+        "description": "Exchange your dollars for cryptocurrencies,. Add and withdraw using your bank account, debit card, BTC, ETH and more."
+      },
+      "about-us": {
+        "free-market-rates": "Free market rates",
+        "safe-and-reliable": "Safe and reliable",
+        "available-24-7": "Available 24/7",
+        "send-money-across-borders": "Send money across borders at real exchange rates without restrictions.",
+        "escrowed-transactions": "Escrowed transactions and verified experienced peers.",
+        "our-support-team": "Our support team and peer network at your service."
+      },
+      "see-what-others-have-to-say-about-airtm": {
+        "root": "See what others have to say about Airtm",
+        "read-more-testimonies-at": "Read more testimonies at"
+      },
+      "how-to-start": {
+        "root": "How to start?",
+        "create-your-account-at-no-cost": "Create your account at no cost.",
+        "add-funds-using-your-local-currency": "Add funds using your local currency.",
+        "save-send-spend-and-withdraw": "Save, send, spend and withdraw."
+      }
+    }
+  },
+  "auth": {
+    "login": {
+      "root": "Log in",
+      "login-to-airtm": "Log in to Airtm",
+      "login-with-facebook": "Log in with Facebook",
+      "login-with-google": "Log in with Google",
+      "or": "or",
+      "your-email": "Your email",
+      "password": "Password",
+      "forgot-your-password": "Forgot your password?",
+      "not-registered-yet": "Not registered yet?",
+      "create-an-account": "Create an account"
+    },
+    "signup": {
+      "root": "Sign up",
+      "join": "Join",
+      "create-an-account": "Create an account",
+      "signup-with-facebook": "Sign up with Facebook",
+      "signup-with-google": "Sign up with Google",
+      "this-account-is-for": "This account is for",
+      "an-individual": "an individual",
+      "a-business": "a business",
+      "what-country-do-you-live-in": "What country do you live in?",
+      "login-to-airtm": "Log in to Airtm",
+      "or": "or",
+      "your-email": "Your email",
+      "password": "Password",
+      "confirm-password": "Confirm Password",
+      "first-name": "First name",
+      "last-name": "Last name",
+      "second-last-name": "Second Last Name (Optional)",
+      "name-must-match-government-issue-id": "* Name must match government issued ID.",
+      "create-account": "Create account",
+      "by-creating-an-account": "By creating an account, you consent that you have read and agree to our",
+      "terms-of-service-and-privacy": "Terms of Service and Privacy",
+      "already-have-an-account": "Already have an account?",
+      "login": "Log in",
+      "benefits-of-airtm": "Benefits of Airtm",
+      "save-and-spend-in-dollars": "Save and spend in U.S. dollars.",
+      "convert-e-money-to-cash-globally": "Convert e-money to cash globally.",
+      "send-money-anywhere": "Send money anywhere.",
+      "exchange-cryptocurrencies": "Exchange cryptocurrencies.",
+      "fast-safe-reliable": "Fast, safe & reliable."
+    },
+    "complete-profile": {
+      "please-complete-your-profile": "Please complete your profile.",
+      "first-name": "First name",
+      "last-name": "Last name",
+      "second-last-name": "Second Last Name (Optional)",
+      "name-must-match-government-issued-id": "* Name must match government issued ID.",
+      "address-line-1": "Address line 1",
+      "address-line-2": "Address line 2",
+      "city": "City",
+      "country": "Country",
+      "country-you-live-in": "* Country you live in",
+      "phone": "Phone",
+      "birthday": "Birthday",
+      "inviter": "Inviter (If applicable)",
+      "verify-phone-to-complete-profile": "Verify phone to complete profile",
+      "state": "State",
+      "postal-code": "Postal code",
+      "enter-the-email-or-username": "Enter the email or username of the person who invited you to Airtm"
+    },
+    "notify": {
+      "minimum-8-characters": "Minimum 8 characters",
+      "at-least-1-special-character": "At least 1 Special character",
+      "at-least-1-upper-case": "At least 1 UPPER CASE",
+      "at-least-1-number": "At least 1 Number"
+    }
+  },
+  "sidebar": {
+    "home": "Home",
+    "add": "Add",
+    "withdraw": "Withdraw",
+    "transfers": "Transfers",
+    "send-request": "Send/Request",
+    "virtual-cards": "Virtual cards",
+    "activity": "Activity",
+    "peer-transfers": "Peer transfers",
+    "crypto": "Crypto",
+    "invite-friends": "Invite friends",
+    "store-directory": "Store directory",
+    "settings": "Settings",
+    "help": "Help",
+    "logout": "Logout"
+  },
+  "client": {
+    "home": {
+      "account-setup": "Account setup",
+      "upload-profile-picture": "Upload a profile picture",
+      "upload-photo-of-yourself": "Upload a photo of yourself to uniquely identify your wallet.",
+      "upload-photo": "Upload photo",
+      "invite-your-fiends": "Invite your friends",
+      "give-air-usd": "Give $2.00 AirUSD and get $3.00 AirUSD for each invite who completes 3 adds funds of at least $5.00 AirUSD each as a verified user. Learn more about our invite program and your variable commission",
+      "here": "here",
+      "later": "Later",
+      "invite": "Invite",
+      "my-balances": "My balances",
+      "main-balance": "Main balance",
+      "add": "Add",
+      "send-request": "Send/Request",
+      "view-activity": "View activity"
+    },
+    "add-funds": {
+      "root": "Add funds",
+      "enter-info": "Enter info",
+      "submit-request": "Submit request",
+      "confirm-transfer": "Confirm transfer",
+      "complete": "Complete",
+      "select-payment-method": "Select a payment method",
+      "more-payment-methods": "More payment methods"
+    },
+    "withdraw-funds": {
+      "root": "Withdraw funds",
+      "enter-info": "Enter info",
+      "submit-request": "Submit request",
+      "confirm-transfer": "Confirm transfer",
+      "complete": "Complete",
+      "select-payment-method": "Select a payment method",
+      "more-payment-methods": "More payment methods"
+    },
+    "invite-friends": {
+      "earn-air-usd": "Earn AirUSD by inviting friends to Airtm",
+      "get-paid-by": "Get paid by sharing Airtm with friends, family, and followers! Give $2.00 AirUSD and get $3.00 AirUSD for each guest who completes 3 adds funds of at least $5.00 AirUSD each as a verified user. Also, you will earn a variable percent of the volume of each transaction your guests complete.",
+      "learn-more": "Learn more about our referral program",
+      "here": "here",
+      "rewards": "*Rewards are paid 24 hours after invite requirements are achieved.",
+      "verify-to-receive-rewards": "Verify to receive rewards",
+      "enter-email-address": "Enter email address(es)",
+      "email-addresses-separated-by-commas": "Email addresses separated by commas",
+      "or-share-your-link": "or share your link",
+      "copy-link": "Copy link",
+      "facebook": "Facebook",
+      "whatsapp": "WhatsApp",
+      "your-invites-must": "Your invites must sign up within 24 hours after clicking through your invite link using the same device and browser for you to receive credit. Rewards are paid 24 hours after invite requirements are achieved.",
+      "out-of": "Out of",
+      "invitees-who": "invitees who have signed up for Airtm",
+      "have-achieved": "have achieved the invite reward and completed",
+      "add-withdraw-transactions": "add/withdraw transactions.",
+      "you-have-earned": "You have earned",
+      "from-invite-rewards-and": "from invite rewards and",
+      "from-add-withdraw-commissions": "from add/withdraw commissions.",
+      "you-are-about-to-send": "You're about to send an invitation to:",
+      "invite": "Invite"
+    },
+    "settings": {
+      "root": "Settings",
+      "profile": {
+        "root": "Profile",
+        "user-name": "Username",
+        "address": "Address",
+        "phone-number": "Phone number",
+        "date-of-birth": "Date of birth",
+        "to-update-your-account-information": "To update your account information",
+        "please": "please",
+        "contact-support": "contact support",
+        "local-currency": "Local currency",
+        "language": "Language",
+        "timezone": "Timezone",
+        "secondary-emails": "Secondary emails",
+        "use-secondary-emails": "Use secondary emails to configure payment methods with an email different than the primary email associated with your Airtm account.",
+        "input-secondary-email": "Input secondary email",
+        "verify-secondary-email": "Verify secondary email"
+      },
+      "verification": {
+        "root": "Verification",
+        "your-wallet-is-not-verified": "Your wallet is not verified",
+        "verify-your-identity": "Verify your identity to access additional payment methods and higher limits. You are currently limited to $1,000 USD-equivalent in aggregate send/withdraw volume",
+        "by-continuing": "By continuing, you consent: I have read, understand and accept",
+        "onfidos-facial": "Onfido’s Facial Scan Policy and Release",
+        "privacy-policy": "Privacy Policy",
+        "and": "and",
+        "terms-of-service": "Terms of Service",
+        "verify-documents-now": "Verify documents now"
+      },
+      "security": {
+        "root": "Security",
+        "security-level": "Security level",
+        "next": "Next",
+        "enable-two-factor-authentication": "Enable two-factor authentication",
+        "password": "Password",
+        "change-password": "Change password",
+        "two-factor-authentication": "Two-factor authentication",
+        "may-require-app-installs-on-your-smartphone": "May require app installs on your smartphone",
+        "enable-now": "Enable now"
+      },
+      "payment-methods": {
+        "root": "Payment methods",
+        "add-new": "Add new",
+        "you-have-not-configured": "You haven't configured any payment methods"
+      },
+      "apps": {
+        "root": "Apps",
+        "airtm-app": "Airtm app",
+        "access-your-airtm-wallet": "Access your Airtm wallet from your smartphone"
+      }
+    },
+    "activity": {
+      "root": "Activity",
+      "transaction-id": "Transaction ID",
+      "email": "Email",
+      "name": "Name",
+      "user-name": "Username",
+      "search": "Search",
+      "filter": "Filter",
+      "text-to-search": "Text to search...",
+      "you-dont-have": "You don't have any completed transactions."
+    },
+    "virtual-cards": {
+      "root": "Virtual cards",
+      "non-reloadable": "Non-reloadable virtual card ($1.25 USD fee per purchase)",
+      "card-is-non-refundable": "Card is non-refundable",
+      "use-anywhere": "Use anywhere online where prepaid Mastercard or Visa are accepted (adult content and gambling are prohibited). All transactions are subject to a risk assessment.",
+      "when-inputting": "When inputting billing address or postal code during purchase, use the Airtm US headquarter address:\n8 The Green, Suite A\nDover, Delaware 19901\nUnited States",
+      "get-a-card": "Get a card",
+      "setup-virtual-card": "Setup virtual card",
+      "card-name": "Card name",
+      "i-e-phone-bill": "i.e. Phone bill",
+      "amount": "Amount",
+      "card-value": "Card value",
+      "local-currency-equivalent": "Local currency equivalent",
+      "total-cost-of-card": "Total cost of card",
+      "show-fee-details": "Show fee details",
+      "hide-fee-details": "Hide fee details",
+      "i-understand": "I understand a $1.25 USD fee will be deducted from my card value for each purchase.",
+      "cancel": "Cancel",
+      "next": "Next",
+      "card-value-must-be-within": "Card value must be within these amounts",
+      "maximum": "Maximum",
+      "minimum": "Minimum",
+      "setup-fee": "Setup fee",
+      "funding-fee": "Funding fee",
+      "service-fee": "Service fee",
+      "total": "Total"
+    },
+    "crypto": {
+      "buy-sell-crypto": "Buy/Sell Crypto",
+      "buy": "Buy",
+      "sell": "Sell",
+      "balance": "Balance",
+      "select-balance": "Select balance",
+      "amount": "Amount",
+      "exchanged": "Exchanged",
+      "enter-an-amount-within": "Enter an amount within the following values",
+      "minimum": "Minimum",
+      "maximum": "Maximum",
+      "market-rate": "Market rate",
+      "exchange-fee": "Exchange fee",
+      "equivalent": "equivalent",
+      "total": "Total",
+      "net-exchange-rate": "Net exchange rate",
+      "confirm-buy": "Confirm buy"
+    }
+  }
+}
