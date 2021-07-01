@@ -23,8 +23,8 @@
     <div class="col-12 col-sm-9">
       <div class="d-flex flex-column">
         <h3 class="text-dark mt-10 mb-15">{{ 'client.home.invite-your-fiends' | translate }}</h3>
-        <span class="text-info">{{ 'client.home.give-air-usd' | translate }} <a class="text-primary text-decoration-none">{{ 'client.home.here' | translate }}</a>.</span>
-        <div class="d-flex justify-content-end align-items-center">
+        <span class="text-info cursor-pointer">{{ 'client.home.give-air-usd' | translate }} <a class="text-primary text-decoration-none">{{ 'client.home.here' | translate }}</a>.</span>
+        <div class="d-flex justify-content-end align-items-center mt-20">
           <button class="btn btn-transparent rounded-pill width-90 me-10" (click)="showInviteFriends = false;">{{ 'client.home.later' | translate }}</button>
           <button class="btn btn-primary rounded-pill width-90" [routerLink]="[ROUTES.client.root, ROUTES.client.inviteFriends] | routeToAbsolute">{{ 'client.home.invite' | translate }}</button>
         </div>

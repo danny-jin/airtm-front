@@ -1,0 +1,19 @@
+@import "../../../assets/theme";
+
+li {
+  background: white;
+  color: $dodger-blue;
+
+  &:first-child {
+    border-radius: 4px 0 0 4px;
+  }
+
+  &:last-child {
+    border-radius: 0 4px 4px 0;
+  }
+
+  &:active, &:focus, &.active {
+    background: $dodger-blue;
+    color: white;
+  }
+}

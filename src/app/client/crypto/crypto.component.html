@@ -1,0 +1,11 @@
+<div class="container">
+  <h1 class="text-dark mb-50">{{ 'client.crypto.buy-sell-crypto' | translate }}</h1>
+  <div class="d-flex mb-30">
+    <ul class="list-unstyled rounded-2 d-flex w-100 justify-content-between elevation-6">
+      <li class="flex-grow-1 py-5 fs-5 font-weight-bold text-center cursor-pointer" routerLinkActive="active" ngxScrollTo="root" [routerLink]="menuItem.value" (click)="setMenu(menuItem.value)" *ngFor="let menuItem of menuItems">
+        {{ menuItem.label }}
+      </li>
+    </ul>
+  </div>
+  <router-outlet></router-outlet>
+</div>

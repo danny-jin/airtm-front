@@ -60,7 +60,7 @@ export class SidebarComponent implements OnInit {
     {
       icon: 'cubic',
       label: 'sidebar.crypto',
-      route: toAbsolutePath([ROUTES.client.root, ROUTES.client.crypto])
+      route: toAbsolutePath([ROUTES.client.root, ROUTES.client.crypto.root])
     },
     {
       icon: 'triangle',

@@ -42,8 +42,8 @@ const routes: Routes = [
         loadChildren: () => import('./home/home.module').then(m => m.HomeModule),
       },
       {
-        path: ROUTES.client.crypto,
-        loadChildren: () => import('./home/home.module').then(m => m.HomeModule),
+        path: ROUTES.client.crypto.root,
+        loadChildren: () => import('./crypto/crypto.module').then(m => m.CryptoModule),
       },
       {
         path: ROUTES.client.inviteFriends,

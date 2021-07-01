@@ -27,7 +27,11 @@ export const ROUTES = {
     },
     activity: 'activity',
     peerTransfers: 'peer-transfers',
-    crypto: 'crypto',
+    crypto: {
+      root: 'crypto',
+      buy: 'buy',
+      sell: 'sell'
+    },
     inviteFriends: 'invite-friends',
     storeDirectory: 'store-directory',
     settings: {

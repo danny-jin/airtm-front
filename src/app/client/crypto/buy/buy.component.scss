@@ -1,0 +1,7 @@
+@import "../../../../assets/theme";
+
+.crypto-header {
+  &:hover, &:active, &:focus, &.active {
+    background: $iron;
+  }
+}

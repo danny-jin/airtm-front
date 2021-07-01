@@ -1,8 +1,8 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 
-import { ROUTES } from '../../core/constants/routes';
 import { SettingsComponent } from './settings.component';
+import { ROUTES } from '../../core/constants/routes';
 
 const routes: Routes = [
   { path: '', component: SettingsComponent, children: [

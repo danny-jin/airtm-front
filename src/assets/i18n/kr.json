@@ -351,6 +351,24 @@
       "funding-fee": "Funding fee",
       "service-fee": "Service fee",
       "total": "Total"
+    },
+    "crypto": {
+      "buy-sell-crypto": "Buy/Sell Crypto",
+      "buy": "Buy",
+      "sell": "Sell",
+      "balance": "Balance",
+      "select-balance": "Select balance",
+      "amount": "Amount",
+      "exchanged": "Exchanged",
+      "enter-an-amount-within": "Enter an amount within the following values",
+      "minimum": "Minimum",
+      "maximum": "Maximum",
+      "market-rate": "Market rate",
+      "exchange-fee": "Exchange fee",
+      "equivalent": "equivalent",
+      "total": "Total",
+      "net-exchange-rate": "Net exchange rate",
+      "confirm-buy": "Confirm buy"
     }
   }
 }
